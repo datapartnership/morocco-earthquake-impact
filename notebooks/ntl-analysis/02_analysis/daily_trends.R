@@ -13,7 +13,7 @@ ntl_df %>%
              color = "red") +
   labs(x = NULL,
        y = "Nighttime Lights",
-       title = "Annual Nighttime Lights: Country Level") +
+       title = "Daily Nighttime Lights: Country Level") +
   theme_classic2()
 
 ggsave(filename = file.path(figures_dir, "daily_trends_adm0.png"),
@@ -32,7 +32,7 @@ ntl_df %>%
              color = "red") +
   labs(x = NULL,
        y = "Nighttime Lights",
-       title = "Annual Nighttime Lights: ADM1 Level") +
+       title = "Daily Nighttime Lights: ADM1 Level") +
   theme_classic2() +
   theme(strip.background = element_blank(),
         strip.text = element_text(face = "bold", size = 6)) +
