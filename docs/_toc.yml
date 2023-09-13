@@ -4,10 +4,7 @@ root: README
 parts:
   - caption: Strategic Brief
     chapters:
-      - file: reports/morocco-earthquake-strategic-brief.md
-  - caption: Introduction to Data Goods
-    chapters:
-      - file: docs/introduction_to_data_goods
+      - file: docs/morocco-earthquake-strategic-brief.md
   - caption: Data Goods Overview and Foundational Data
     numbered: False
     chapters:
