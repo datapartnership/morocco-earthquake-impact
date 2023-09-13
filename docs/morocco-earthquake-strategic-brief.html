@@ -391,10 +391,12 @@ document.write(`
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Data Lab Strategic Brief: Morocco Earthquake Impact Monitoring</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-overview">Project Overview</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-collection-and-acquisition">Data Collection and Acquisition</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#official-un-earthquake-and-refugee-impact-reporting">Official UN Earthquake and Refugee Impact Reporting</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#population-demographics-and-human-settlement-data">Population,Demographics, and Human Settlement Data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#boundaries-and-shapefiles">Boundaries and shapefiles</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#satellite-imagery-for-detecting-land-surface-changes">Satellite Imagery for Detecting Land Surface Changes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#population-demographics-and-human-settlement-data">Population,Demographics, and Human Settlement Data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#economic-activity-and-financial-transaction-data">Economic Activity and Financial Transaction Data</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#geospatial-infrastructure-data-roads-buildings-power-grids-internet-connectivity">Geospatial Infrastructure Data (Roads, Buildings, Power Grids, Internet Connectivity)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-for-understanding-critical-needs-and-access-to-services">Data for Understanding Critical Needs and Access to Services</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-for-measuring-economic-activity-direct-and-proxies">Data for Measuring Economic Activity (Direct and Proxies)</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-for-monitoring-the-movement-of-people">Data for Monitoring the Movement of People</a></li>
@@ -429,7 +431,7 @@ document.write(`
 </li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2"></a></li>
 </ul>
 
             </nav>
@@ -461,80 +463,67 @@ similar projects.</p>
 <section id="data-collection-and-acquisition">
 <h2>Data Collection and Acquisition<a class="headerlink" href="#data-collection-and-acquisition" title="Permalink to this heading">#</a></h2>
 <p><em>This section includes a range of data collection and acquisition recommendations, such as open data resources, leveraging private data partnerships, current World Bank subscriptions and licenses, survey solutions, and remote sensing.</em></p>
-<section id="official-un-earthquake-and-refugee-impact-reporting">
-<h3>Official UN Earthquake and Refugee Impact Reporting<a class="headerlink" href="#official-un-earthquake-and-refugee-impact-reporting" title="Permalink to this heading">#</a></h3>
+<p>Official UN Earthquake Reporting</p>
 <table class="colwidths-auto table">
 <thead>
-<tr class="row-odd"><th class="head"><p><strong>ID</strong></p></th>
-<th class="head"><p><strong>Dataset</strong></p></th>
-<th class="head"><p><strong>Description</strong></p></th>
-<th class="head"><p><strong>License</strong></p></th>
-<th class="head"><p><strong>Access</strong></p></th>
+<tr class="row-odd"><th class="head"><p>ID</p></th>
+<th class="head"><p>Dataset</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>License</p></th>
+<th class="head"><p>Access</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>1</p></td>
-<td><p>UN OCHA Humanitarian Data Exchange Türkiye-Syria Earthquakes Collection</p></td>
-<td><p>Collection covering damage; deaths and injuries; location of points of interest, including financial service centers, health facilities, and schools.</p></td>
+<tr class="row-even"><td><p>2</p></td>
+<td><p>United Nations Disaster Charter</p></td>
+<td><p>The disaster charter releases multiple products such as - <a class="reference external" href="https://experience.arcgis.com/experience/c6682b3811894bff9ffcfa58c166d742/page/UNOSAT/">UNOSAT’s Live Web Map</a>, <a class="reference external" href="https://disasterscharter.org/image/journal/article.jpg?img_id=21745737&amp;t=1694601021842">Ground deformation maps</a>, initial impact of earthquake on villages and initial impact on <a class="reference external" href="https://disasterscharter.org/image/journal/article.jpg?img_id=21731351&amp;t=1694526178550">Night Time Lights</a></p></td>
 <td><p>Open</p></td>
-<td><p><a class="reference external" href="https://data.humdata.org/event/turkiye-syria-earthquakes">Türkiye-Syria Earthquakes Collection</a></p></td>
+<td><p><a class="reference external" href="https://disasterscharter.org/web/guest/activations/-/article/earthquake-in-morocco-activation-838-">Disaster Charter</a></p></td>
 </tr>
-<tr class="row-odd"><td><p>2</p></td>
-<td><p>UNHCR Türkiye Country Focus</p></td>
-<td><p>Regular text and pdf updates on refugee activities, particularly refugees entering Türkiye from Syria</p></td>
+<tr class="row-odd"><td><p>3</p></td>
+<td><p>UNOSAT Damage Assessment</p></td>
+<td><p>This map illustrates potentially damaged structures/buildings by the earthquake.</p></td>
 <td><p>Open</p></td>
-<td><p><a class="reference external" href="https://reporting.unhcr.org/turkey#toc-populations">UNHCR Türkiye Country Focus</a></p></td>
+<td><p><a class="reference external" href="https://data.humdata.org/dataset/damage-assessment-in-chichaoua-marrakech-safi-region-morocco-as-of-10-september-2023">HdX Morocco dataset</a></p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>UNOCHA Boundary Shapefiles</p></td>
+<td><p>This dataset only has until admin level 3 which is too large an area to measure earthquake impact.</p></td>
+<td><p>Open</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>GADM Boundary Shapefiles</p></td>
+<td><p>GADM released</p></td>
+<td><p>Open</p></td>
+<td><p></p></td>
 </tr>
 </tbody>
 </table>
-</section>
-<section id="population-demographics-and-human-settlement-data">
-<h3>Population,Demographics, and Human Settlement Data<a class="headerlink" href="#population-demographics-and-human-settlement-data" title="Permalink to this heading">#</a></h3>
+<section id="boundaries-and-shapefiles">
+<h3>Boundaries and shapefiles<a class="headerlink" href="#boundaries-and-shapefiles" title="Permalink to this heading">#</a></h3>
+<p>Morocco’s borders have long been in contention making the boundary files difficult to publicly release or report on. We identified two data sources from which boundaries can be obtained. Although GADM is not a United Nayions’ source, it provides boudnaries at admin 3 and 4 levels which makes it easier to measure the impact of the earthquake.</p>
 <table class="colwidths-auto table">
 <thead>
-<tr class="row-odd"><th class="head"><p><strong>ID</strong></p></th>
-<th class="head"><p><strong>Dataset</strong></p></th>
-<th class="head"><p><strong>Description</strong></p></th>
-<th class="head"><p><strong>License</strong></p></th>
-<th class="head"><p><strong>Access</strong></p></th>
+<tr class="row-odd"><th class="head"><p>ID</p></th>
+<th class="head"><p>Dataset</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>License</p></th>
+<th class="head"><p>Access</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>3</p></td>
-<td><p>Facebook Population During Crisis</p></td>
-<td><p>The number of Facebook users observed in a location following a crisis compared to a precrisis baseline period. Although this dataset is limited to Facebook users, it is the most frequently updated estimate of population movement available.</p></td>
-<td><p>Proprietary</p></td>
-<td><p>Data<br> can be accessed by <a class="reference external" href="https://portal.datapartnership.org/submitproposal">submitting a proposal</a> to the <a class="reference external" href="https://portal.datapartnership.org/">Development Data Partnership</a>.</p></td>
-</tr>
-<tr class="row-odd"><td><p>4</p></td>
-<td><p>Meta High Resolution Population Density Maps</p></td>
-<td><p>Meta, in collaboration with Center for International Earth Science Information Network (CIESIN), used artificial intelligence to identify buildings from satellite imagery and, with census and other data, derived population estimates at a 30-meter resolution. The 2020 dataset includes a spatial breakdown of population by gender and age.</p></td>
+<tr class="row-even"><td><p></p></td>
+<td><p>UNOCHA Boundary Shapefiles</p></td>
+<td><p>This dataset only has boundaries until admin level 3.</p></td>
 <td><p>Open</p></td>
-<td><p><a class="reference external" href="https://data.humdata.org/dataset/turkey-high-resolution-population-density-maps-demographic-estimates">HdX</a>; The Data Lab has extracted this data and made available on <a class="reference external" href="https://worldbankgroup.sharepoint.com/:f:/t/DevelopmentDataPartnershipCommunity-WBGroup/En8WFMMSHGtJvvqidCFjGB0BwJKUy1444luPDG5reB3r4Q?e=qJA5uB">WB SharePoint</a></p></td>
+<td><p>HdX</p></td>
 </tr>
-<tr class="row-even"><td><p>5</p></td>
-<td><p>WorldPop Population Density</p></td>
-<td><p>WorldPop<br> released the population dataset for Türkiye from 2020 at a 100m resolution. This dataset is available in a .tif format.</p></td>
-<td><p>Open</p></td>
-<td><p><a class="reference external" href="https://hub.worldpop.org/geodata/summary?id=6443">WorldPop Population Dataset</a> and <a class="reference external" href="https://hub.worldpop.org/tabs/gdata/html/6443/report_prj_2020_TUR.html">Metadata</a></p></td>
-</tr>
-<tr class="row-odd"><td><p>6</p></td>
-<td><p>Türkiye Official Population, Migration, and Income Statistics</p></td>
-<td><p>The<br> Turkish Statistical Insitute hosts data for population disaggregated by gender, age, municipality as early as 2023. They also have migration statistics published in December 2022. Statistics also include information on regional relative poverty, disposable income of households, and other income distribution statistics.</p></td>
-<td><p>Open</p></td>
-<td><p>Türkiye Official Statistics for <a class="reference external" href="https://data.tuik.gov.tr/Kategori/GetKategori?p=Population-and-Demography-109">Population and Migration</a>; for <a class="reference external" href="https://data.tuik.gov.tr/Kategori/GetKategori?p=Income,-Living,-Consumption-and-Poverty-107">Income</a></p></td>
-</tr>
-<tr class="row-even"><td><p>7</p></td>
-<td><p>Atlas AI Human Settlement Geospatial Layer</p></td>
-<td><p>Atlas AI released their Atlas of Human Settlements data for Turki and Syria from 2021 for humanitarian needs. The data show the extent of human settlements and population prior to the earthquake and include three data products – a <strong>Built-up Surface Map</strong>, estimating human presence in each 100 sq-m unit area; a <strong>Built-up Index Map</strong>, a scaled estimate of the extent of human presence in each 100 sq-m unit area, inferred from buildings; and a <strong>Built-up Settlement Map</strong> which is a vector representation of the built-up surface, spatially aggregated within a 50m radius.</p></td>
-<td><p>Open (for Türkiye and Syria only; else proprietary)</p></td>
-<td><p><a class="reference external" href="https://storage.googleapis.com/atlasai-public-assets/index.html">Human Settlement Layer.</a> For latest information from<br> the same company, contact the <a class="reference external" href="mailto:datapartnership&#37;&#52;&#48;worldbank&#46;org">Development Data Partnership</a>.</p></td>
-</tr>
-<tr class="row-odd"><td><p>8</p></td>
-<td><p>Meta Relative Wealth Index</p></td>
-<td><p>The Relative Wealth Index from Meta identifies areas that are richer/poorer in comparison to other areas within the country. This dataset has been made publicly available for Türkiye and can be used to identify areas where there are likely to be more vulnerable populations.</p></td>
-<td><p>Open (for Türkiye only; else proprietary)</p></td>
-<td><p><a class="reference external" href="https://data.humdata.org/dataset/relative-wealth-index?fbclid=IwAR2eT_m1R75hlNLRAsFocY8M8m6rfniuwtrwTc6xZ1RuzyDa3ywouz81M3A">Relative Wealth Index</a></p></td>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
 </tr>
 </tbody>
 </table>
@@ -552,16 +541,76 @@ similar projects.</p>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>9</p></td>
-<td><p>United States Geological Survey Landsat</p></td>
-<td><p>Satellite imagery data that can be used to track changes in land area.</p></td>
+<td><p>United States Geological Survey (USGS) Landsat</p></td>
+<td><p>Satellite imagery data that can be used to track changes in land area. USGS releases ShakeMaps in the aftermath of an earthquake which reports earthquake intensity using the <a class="reference external" href="https://www.usgs.gov/programs/earthquake-hazards/modified-mercalli-intensity-scale#:~:text=The%20effect%20of%20an%20earthquake,%2C%20and%20finally%20%2D%20total%20destruction.">Modified Mercelli Intensity</a> Scale</p></td>
 <td><p>Open</p></td>
-<td><p><a class="reference external" href="https://earthexplorer.usgs.gov/">Landsat</a></p></td>
+<td><p><a class="reference external" href="https://earthquake.usgs.gov/earthquakes/eventpage/us7000kufc/shakemap/intensity">USGS</a>; <a class="reference external" href="https://worldbankgroup.sharepoint.com.mcas.ms/teams/DevelopmentDataPartnershipCommunity-WBGroup/Shared%20Documents/Forms/AllItems.aspx?csf=1&amp;web=1&amp;e=Yvwh8r&amp;cid=fccdf23e%2D94d5%2D48bf%2Db75d%2D0af291138bde&amp;FolderCTID=0x012000CFAB9FF0F938A64EBB297E7E16BDFCFD&amp;id=%2Fteams%2FDevelopmentDataPartnershipCommunity%2DWBGroup%2FShared%20Documents%2FProjects%2FData%20Lab%2FMorocco%20Economic%20Monitor%2FData%2Fearthquake%5Fintensity&amp;viewid=80cdadb3%2D8bb3%2D47ae%2D8b18%2Dc1dd89c373c5">Project SharePoint</a></p></td>
 </tr>
 <tr class="row-odd"><td><p>10</p></td>
 <td><p>Copernicus Sentinel Data</p></td>
 <td><p>Copernicus Open Access Hub hosts Sentinel radar data that can be used to track land area changes, regardless of cloud cover.</p></td>
 <td><p>Open</p></td>
 <td><p><a class="reference external" href="https://scihub.copernicus.eu/">Sentinel</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="population-demographics-and-human-settlement-data">
+<h3>Population,Demographics, and Human Settlement Data<a class="headerlink" href="#population-demographics-and-human-settlement-data" title="Permalink to this heading">#</a></h3>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>ID</p></th>
+<th class="head"><p>Dataset</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>License</p></th>
+<th class="head"><p>Access</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>11</p></td>
+<td><p>WorldPop Population Density</p></td>
+<td><p>The spatial distribution of population denstiy in 2020 based on country total adjusted to match corresponding UNDP estimate. Population desntiy per grid cell (~1km resolution)</p></td>
+<td><p>Open</p></td>
+<td><p><a class="reference external" href="https://hub.worldpop.org/geodata/summary?id=47627">WorldPop</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>12</p></td>
+<td><p>AtlasAI Human Settlement Layer</p></td>
+<td><p>AtlasAI data show the extent of human settlements and population prior to the earthquake. This settlement map can be used to potentially bridge gaps of the 2013 household survey.</p></td>
+<td><p>Proprietary</p></td>
+<td><p>Submit a proposal though the Development Data Partnership</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="economic-activity-and-financial-transaction-data">
+<h3>Economic Activity and Financial Transaction Data<a class="headerlink" href="#economic-activity-and-financial-transaction-data" title="Permalink to this heading">#</a></h3>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>ID</p></th>
+<th class="head"><p>Dataset</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>License</p></th>
+<th class="head"><p>Access</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>Meta Relative Wealth Index</p></td>
+<td><p>The Relative Wealth Index from Meta identifies areas that are richer/poorer in comparison to other areas within the country. This dataset has been made publicly available for Morocco and can be used to identify areas where there are likely to be more vulnerable populations.</p></td>
+<td><p>Open</p></td>
+<td><p><a class="reference external" href="https://data.humdata.org/dataset/relative-wealth-index">HdX</a></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
 </tr>
 </tbody>
 </table>
@@ -580,19 +629,19 @@ similar projects.</p>
 <tbody>
 <tr class="row-even"><td><p>11</p></td>
 <td><p>Open Street Maps</p></td>
-<td><p>Open Street Map hosts crowd-sourced points of interest, amenities, roads, and other physical features for Türkiye and neighboring countries. There is an active community of volunteers updating these maps, including labeling collapsed buildings.</p></td>
+<td><p>Open Street Map hosts crowd-sourced points of interest, amenities, roads, and other physical features for Morocco. There is an active community of volunteers updating these maps, including labeling collapsed buildings.</p></td>
 <td><p>Open</p></td>
-<td><p><a class="reference external" href="https://www.openstreetmap.org/#map=4/21.84/82.79">OpenStreetMaps;</a> Query for pulling the <a class="reference external" href="https://overpass-turbo.eu/">latest collapsed building data</a></p></td>
+<td><p><a class="reference external" href="https://www.openstreetmap.org/#map=4/21.84/82.79">OpenStreetMaps;</a></p></td>
 </tr>
 <tr class="row-odd"><td><p>12</p></td>
 <td><p>Microsoft Building Footprints</p></td>
-<td><p>Microsoft has used AI to generate recent baseline building footprints for Türkiye and northern Syria (dated November 2022) that are accessible through an open-source license.</p></td>
+<td><p>Microsoft has used AI to generate recent baseline building footprints for Morocco (dated November 2022) that are accessible through an open-source license.</p></td>
 <td><p>Open</p></td>
-<td><p><a class="reference external" href="https://github.com/microsoft/GlobalMLBuildingFootprints">Building footprint respository</a>; Footprints for Türkiye and Syria:  <a class="reference external" href="https://worldbankgroup.sharepoint.com.mcas.ms/teams/DevelopmentDataPartnershipCommunity-WBGroup/Shared%20Documents/Forms/AllItems.aspx?id=%2Fteams%2FDevelopmentDataPartnershipCommunity%2DWBGroup%2FShared%20Documents%2FProjects%2FData%20Lab%2FTurkey%20Rapid%20Damage%20Needs%20Assessment%2FData%2Fmicrosoft%5Fbuilding%5Ffootprints%5Fdata&amp;p=true&amp;ga=1&amp;McasCtx=4&amp;McasTsid=20892">WB SharePoint</a></p></td>
+<td><p><a class="reference external" href="https://github.com/microsoft/GlobalMLBuildingFootprints">Building footprint respository</a>;</p></td>
 </tr>
 <tr class="row-even"><td><p>13</p></td>
 <td><p>Meta Electricity Grid Distribution Maps</p></td>
-<td><p>Using <a class="reference external" href="https://github.com/carderne/gridfinder">gridfinder</a>, an open-source tool for predicting the location of<br> electricity network lines using night-time lights satellite imagery and OpenStreetMap data, Meta has released a map that shows the predicted electricity distribution grid and transmission lines.</p></td>
+<td><p>Using <a class="reference external" href="https://github.com/carderne/gridfinder">gridfinder</a>, an open-source tool for predicting the location of electricity network lines using night-time lights satellite imagery and OpenStreetMap data, Meta has released a map that shows the predicted electricity distribution grid and transmission lines.</p></td>
 <td><p>Open</p></td>
 <td><p><a class="reference external" href="https://rdrn.me/gridfinder/">Electricity Distribution Maps</a></p></td>
 </tr>
@@ -600,16 +649,13 @@ similar projects.</p>
 <td><p>Ookla Speedtest Intelligence Data</p></td>
 <td><p>Ookla provides internet connectivity data which allows to see pre-earthquake and post-earthquake internet speeds across the country. This can be used as a proxy to identify areas that would be harder to reach and a proxy to identify areas where infrastructure may be damaged because of the earthquake. Quarterly data at a subnational level is available publicly and the more temporally and spatially granular datasets can be accessed through The Partnership.</p></td>
 <td><p>Open and Proprietary</p></td>
-<td><p>Quarterly<br> data: <a class="reference external" href="https://www.ookla.com/ookla-for-good/open-data">Ookla Open Data portal</a> Daily data: accessible by <a class="reference external" href="https://portal.datapartnership.org/submitproposal">submitting a proposal</a> to the <a class="reference external" href="https://portal.datapartnership.org/">Development Data Partnership</a>.</p></td>
-</tr>
-<tr class="row-even"><td><p>15</p></td>
-<td><p>Network Coverage Maps by Meta</p></td>
-<td><p>Network<br> Coverage Maps show where people using Facebook have cellular connectivity. This data provides information about gaps in cellular network coverage after natural disasters for the purpose of restoring connectivity as well as determining where aid workers and communities will be able to communicate. This dataset is available on a daily basis.</p></td>
-<td><p>Proprietary</p></td>
-<td><p><a class="reference external" href="https://portal.datapartnership.org/submitproposal">Submit a proposal</a> to the <a class="reference external" href="https://portal.datapartnership.org/">Development Data Partnership</a></p></td>
+<td><p>Quarterly data: <a class="reference external" href="https://www.ookla.com/ookla-for-good/open-data">Ookla Open Data portal</a> Daily data: accessible by <a class="reference external" href="https://portal.datapartnership.org/submitproposal">submitting a proposal</a> to the <a class="reference external" href="https://portal.datapartnership.org/">Development Data Partnership</a>.</p></td>
 </tr>
 </tbody>
 </table>
+</section>
+<section id="id1">
+<h3><a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
 </section>
 <section id="data-for-understanding-critical-needs-and-access-to-services">
 <h3>Data for Understanding Critical Needs and Access to Services<a class="headerlink" href="#data-for-understanding-critical-needs-and-access-to-services" title="Permalink to this heading">#</a></h3>
@@ -631,11 +677,41 @@ similar projects.</p>
 </tr>
 <tr class="row-odd"><td><p>17</p></td>
 <td><p>Premise Humanitarian Needs Surveys</p></td>
-<td><p><a class="reference external" href="https://www.linkedin.com/company/premise-data/">Premise</a> has had humanitarian data<br> collection up and running in Türkiye since the earthquake. Some of their data include, surveys of displaced people and observational data related to medical supply, road conditions etc. They can also conduct custom surveys based on the needs of World Bank teams.</p></td>
-<td><p>Open for Türkiye until 3/15/23; Proprietary otherwise</p></td>
-<td><p><a class="reference external" href="https://worldbankgroup.sharepoint.com/:b:/t/DevelopmentDataPartnershipCommunity-WBGroup/EfR1X4D2ahpIodzrDJWmcPgB4xEJ6GqOXW8WiWIMSJ4JOg?e=rw8zvg">Premise survey data<br> availability list</a>. To access, contact <a class="reference external" href="mailto:datapartnership&#37;&#52;&#48;worldbank&#46;org">datapartnership<span>&#64;</span>worldbank<span>&#46;</span>org</a></p></td>
+<td><p><a class="reference external" href="https://www.linkedin.com/company/premise-data/">Premise</a> is collecting the following humanitarian data in Morocco since the earthquake. Needs assessment (sentiment) - pressing needs in the Contributor’s community</p></td>
+<td><p></p></td>
+<td><p></p></td>
 </tr>
-<tr class="row-even"><td><p>18</p></td>
+<tr class="row-even"><td><p><br/>Earthquake aid (sentiment) - asking how they feel about government and external response efforts to the earthquake</p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><br/>Hospitals (observational) - asking Contributors to record the locations of and take photos of hospitals in their areas</p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><br/>Road conditions (observational) - asking Contributors to document the main roads and motorways in their areas that have been affected by the earthquake</p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><br/>Earthquake damage (observational) - asking Contributors to identify and take photos and videos of earthquake damage in their areas</p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><br/>Fuel prices and availability (observational) - asking Contributors to find where fuel is sold and report on the price. They can also conduct custom surveys based on the needs of World Bank teams.</p></td>
+<td><p>Proprietary</p></td>
+<td><p>To access, contact <a class="reference external" href="mailto:datapartnership&#37;&#52;&#48;worldbank&#46;org">datapartnership<span>&#64;</span>worldbank<span>&#46;</span>org</a></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>18</p></td>
 <td><p>Google Search Trends</p></td>
 <td><p>Search trends data from the Google Trends API can be used to identify trends in search terms of specific words over time. For instance, a change in search terms related to ‘medicine’ or ‘food’ can indicate a specific need in different parts of the country.</p></td>
 <td><p>Proprietary</p></td>
@@ -662,18 +738,6 @@ similar projects.</p>
 <td><p>Open</p></td>
 <td><p><a class="reference external" href="https://registry.opendata.aws/wb-light-every-night/">NightTime Lights Data.</a> For support in utilizing Nighttime Lights, contact the Geospatial Operations Support Team (GOST): <a class="reference external" href="mailto:gost&#37;&#52;&#48;worldbank&#46;org">gost<span>&#64;</span>worldbank<span>&#46;</span>org</a> or <a class="reference external" href="mailto:rmarty&#37;&#52;&#48;worldbank&#46;org">Rob Marty</a> (DIME).</p></td>
 </tr>
-<tr class="row-odd"><td><p>20</p></td>
-<td><p>Meta Business Activity Trends</p></td>
-<td><p><a class="reference external" href="https://dataforgood.facebook.com/dfg/tools/business-activity-trends">Business Activity Trends</a> measures relative Facebook<br> business page activity (posts, comments, etc.). Index values are compared to a rolling three month-prior baseline. The data is released daily and at a subnational level, aggregated by sector (e.g., retail, grocery). During crises, the expectation is that activity levels will decline.</p></td>
-<td><p>Proprietary</p></td>
-<td><p><a class="reference external" href="https://portal.datapartnership.org/submitproposal">Submit a proposal</a> to the <a class="reference external" href="https://portal.datapartnership.org/">Development Data Partnership</a></p></td>
-</tr>
-<tr class="row-even"><td><p>21</p></td>
-<td><p>Türkiye Official Economic Statistics</p></td>
-<td><p>The<br> Turkish Statistical Institute has released Producer Price Index (PPI) for agricultural products, domestic PPI and other inflation related indicators as early as 2023. They also have data on <a class="reference external" href="https://data.tuik.gov.tr/Kategori/GetKategori?p=Economic-Confidence-117">Economic Confidence Index</a>.</p></td>
-<td><p>Open</p></td>
-<td><p><a class="reference external" href="https://data.tuik.gov.tr/Kategori/GetKategori?p=Inflation-v-Price-106">Turkish Statistical<br> Institute Economic Indicators</a></p></td>
-</tr>
 </tbody>
 </table>
 </section>
@@ -690,33 +754,27 @@ similar projects.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>22</p></td>
-<td><p>Meta Movement between Places during Crises</p></td>
-<td><p><a class="reference external" href="https://portal.datapartnership.org/datapartner/12">Movement Between Places</a> during Crisis shows how many Facebook users moved from one area to another and if this movement is more or less than a normal day before a crisis or event.</p></td>
-<td><p>Proprietary</p></td>
-<td><p><a class="reference external" href="https://portal.datapartnership.org/submitproposal">Submit a proposal</a> to the <a class="reference external" href="https://portal.datapartnership.org/">Development Data Partnership</a></p></td>
-</tr>
-<tr class="row-odd"><td><p>23</p></td>
+<tr class="row-even"><td><p>23</p></td>
 <td><p>Outlogic Observation Panel (Mobile Device GPS Data)</p></td>
-<td><p><a class="reference external" href="https://portal.datapartnership.org/datapartner/32">Outlogic</a> collects a mobile location data panel that includes mobility metrics (speed, bearing, altitude, vertical accuracy) and other detection capabilities (IoT, Wi-Fi, and Beacon). Türkiye has a <a class="reference external" href="https://docs.datapartnership.org/visualizations/outlogic">significant number of devices</a> whose GPS data is recorded through the panel that can be used to monitor population movement. The Data Lab team has used these data to track movement across borders between <a class="reference external" href="https://datapartnership.org/syria-economic-monitor/notebooks/mobility/README.html">Syria and Lebanon.</a></p></td>
+<td><p><a class="reference external" href="https://portal.datapartnership.org/datapartner/32">Outlogic</a> collects a mobile location data panel that includes mobility metrics (speed, bearing, altitude, vertical accuracy) and other detection capabilities (IoT, Wi-Fi, and Beacon). The Data Lab team has used these data to track movement across borders between <a class="reference external" href="https://datapartnership.org/syria-economic-monitor/notebooks/mobility/README.html">Syria and Lebanon.</a></p></td>
 <td><p>Proprietary</p></td>
 <td><p><a class="reference external" href="https://portal.datapartnership.org/submitproposal">Submit a proposal</a> to the <a class="reference external" href="https://portal.datapartnership.org/">Development Data Partnership</a></p></td>
 </tr>
-<tr class="row-even"><td><p>24</p></td>
+<tr class="row-odd"><td><p>24</p></td>
 <td><p>Veraset Movement Data</p></td>
 <td><p><a class="reference external" href="https://portal.datapartnership.org/datapartner/29">Veraset</a> provides a similar service to Outlogic – mobility data comprises population location and movement data derived primarily from mobile device GPS, Wi-Fi, and IoT signals. A similar analysis to Outlogic can be performed using Veraset da</p></td>
 <td><p>Proprietary</p></td>
 <td><p><a class="reference external" href="https://portal.datapartnership.org/submitproposal">Submit a proposal</a> to the <a class="reference external" href="https://portal.datapartnership.org/">Development Data Partnership</a></p></td>
 </tr>
-<tr class="row-odd"><td><p>25</p></td>
+<tr class="row-even"><td><p>25</p></td>
 <td><p>Mapbox Movement</p></td>
 <td><p>Mapbox Movement is a global data set derived from 20B+ location updates daily, which may be used to understand aggregate activity, density, and movement over time at the city, regional, or country scale.</p></td>
 <td><p>Proprietary</p></td>
 <td><p><a class="reference external" href="https://portal.datapartnership.org/submitproposal">Submit a proposal</a> to the <a class="reference external" href="https://portal.datapartnership.org/">Development Data Partnership</a></p></td>
 </tr>
-<tr class="row-even"><td><p>26</p></td>
+<tr class="row-odd"><td><p>26</p></td>
 <td><p>Mapbox Traffic Matrix API</p></td>
-<td><p>The Mapbox Matrix API is built on anonymized mobile device telemetry data and supports large scale traffic and road network analyses. The API may be used to identify areas poorly served by critical services. This dataset has been used in the past by WB colleagues to analyze spatial accessibility of health facilities. The usefulness of this dataset depends on the availability of Mapbox data for Türkiye.</p></td>
+<td><p>The Mapbox Matrix API is built on anonymized mobile device telemetry data and supports large scale traffic and road network analyses. The API may be used to identify areas poorly served by critical services. This dataset has been used in the past by WB colleagues to analyze spatial accessibility of health facilities. The usefulness of this dataset depends on the availability of Mapbox data for Morocco.</p></td>
 <td><p>Proprietary</p></td>
 <td><p><a class="reference external" href="https://portal.datapartnership.org/submitproposal">Submit a proposal</a> to the <a class="reference external" href="https://portal.datapartnership.org/">Development Data Partnership</a></p></td>
 </tr>
@@ -952,7 +1010,7 @@ the Task Team (e.g., ““water,” “money transfer,” “pediatrician,” �
 <td><p>1.     Identify search terms that can be queried on Google Trends API <br>2.     Map the changes in search terms over the weeks prior to the earthquake and weeks post the earthquake <br>3.     Verify if this change can be attributed to a change in network coverage <br>4.     Identify areas where there is an unnatural spike in number of times a search term appears <br>5.     Verify findings with official statistics and Premise field survey results (pending availability) <br>6.     Identify areas where there is a need based on the Premise survey and verify if such a need is absent from Google Trends because of a lack of network connectivity.</p></td>
 </tr>
 <tr class="row-even"><td><p>Outputs</p></td>
-<td><p><u><span>Datasets</span></u>. All datasets used in the analysis will be documented and hosted on the World Bank Development Data Hub (for ease of sharing) and a project SharePoint (for the CMU’s ease of use).<br><u><span>Code and Documentation</span></u>. All methods will be fully documented and reproducible, so that the analysis can be quickly updated by the CMU as new data are available.<br><u><span>Indicators</span></u>. Changes in surveyed prices of key goods (fuel, foods, etc.) by district; Summary of observed needs through surveys and social media by district.<br><u><span>Maps</span></u>. Dynamic map of price changes in surveyed goods by location in Türkiye over time | Dynamic map of observed needs over time by location.<br><u><span>Training and Support</span></u>. The Lab will provide the CMU team with training so they may tweak the methodology and continue updating the insights on their own. The Lab would be available for technical assistance, as needed.</p></td>
+<td><p><u><span>Datasets</span></u>. All datasets used in the analysis will be documented and hosted on the World Bank Development Data Hub (for ease of sharing) and a project SharePoint (for the CMU’s ease of use).<br><u><span>Code and Documentation</span></u>. All methods will be fully documented and reproducible, so that the analysis can be quickly updated by the CMU as new data are available.<br><u><span>Indicators</span></u>. Changes in surveyed prices of key goods (fuel, foods, etc.) by district; Summary of observed needs through surveys and social media by district.<br><u><span>Maps</span></u>. Dynamic map of price changes in surveyed goods by location in Morocco over time | Dynamic map of observed needs over time by location.<br><u><span>Training and Support</span></u>. The Lab will provide the CMU team with training so they may tweak the methodology and continue updating the insights on their own. The Lab would be available for technical assistance, as needed.</p></td>
 </tr>
 <tr class="row-odd"><td><p>Limitations</p></td>
 <td><p>Premise data are crowdsourced and may not be representative of the affected population. <br>Google Trends relies on people with an active internet connection to search, which excludes people without internet access or who do not use Google search.</p></td>
@@ -992,8 +1050,8 @@ Bank and in partner international organizations. See more at <a class="reference
 </section>
 </section>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="id1">
-<h1><a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
+<section class="tex2jax_ignore mathjax_ignore" id="id2">
+<h1><a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h1>
 </section>
 
     <script type="text/x-thebe-config">
@@ -1066,10 +1124,12 @@ Bank and in partner international organizations. See more at <a class="reference
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Data Lab Strategic Brief: Morocco Earthquake Impact Monitoring</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-overview">Project Overview</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-collection-and-acquisition">Data Collection and Acquisition</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#official-un-earthquake-and-refugee-impact-reporting">Official UN Earthquake and Refugee Impact Reporting</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#population-demographics-and-human-settlement-data">Population,Demographics, and Human Settlement Data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#boundaries-and-shapefiles">Boundaries and shapefiles</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#satellite-imagery-for-detecting-land-surface-changes">Satellite Imagery for Detecting Land Surface Changes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#population-demographics-and-human-settlement-data">Population,Demographics, and Human Settlement Data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#economic-activity-and-financial-transaction-data">Economic Activity and Financial Transaction Data</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#geospatial-infrastructure-data-roads-buildings-power-grids-internet-connectivity">Geospatial Infrastructure Data (Roads, Buildings, Power Grids, Internet Connectivity)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-for-understanding-critical-needs-and-access-to-services">Data for Understanding Critical Needs and Access to Services</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-for-measuring-economic-activity-direct-and-proxies">Data for Measuring Economic Activity (Direct and Proxies)</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-for-monitoring-the-movement-of-people">Data for Monitoring the Movement of People</a></li>
@@ -1104,7 +1164,7 @@ Bank and in partner international organizations. See more at <a class="reference
 </li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2"></a></li>
 </ul>
 
   </nav></div>
