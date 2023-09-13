@@ -10,7 +10,7 @@ The Morocco Country Economist and Poverty Team team has requested advisory on da
 
 ## Approach
 
-The WB Data Lab is exploring use of alternative data to better understand immediate socio-economic impacts of the earthquake and resiliency of the affected communities. To this end, the team prepared a [Strategic Brief](https://datapartnership.org/turkiye-earthquake-impact/reports/turkiye-earthquake-strategic-brief.html), which presents available datasets and analytics to support answers to these questions.
+The WB Data Lab is exploring use of alternative data to better understand immediate socio-economic impacts of the earthquake and resiliency of the affected communities. To this end, the team prepared a [Strategic Brief](https://datapartnership.org/morocco-earthquake-impact/docs/morocco-earthquake-strategic-brief.html), which presents available datasets and analytics to support answers to these questions.
 
 The team, comprised of colleagues from the Global Operations Support Team (GOST), the Development Impact Monitoring and Evaluation team (DIME), the Development Data Partnership, and the WB Data Lab, are working with the country team to explore use of alternative open and proprietary data sources to generate new data products that can be sustainably updated.
 
