@@ -12,6 +12,7 @@ parts:
       - file: docs/foundational_datasets_and_data_products.md
   - caption: Data Products
     chapters:
+      - file: notebooks/earthquake-intensity/earthquake_intensity.ipynb
       - file: docs/drought-index
         sections:
         - file: docs/drought-summary
