@@ -4,7 +4,7 @@
 
 ## Challenge
 
-In September 2023, a powerful 6.8 magnitude earthquake and a series of strong tremors and aftershocks wrought substantial damages in central Morocco. As of time of writing, the death toll has passed 2,800 and the earthquake’s aftermath is substantially impacting the people, infrastructure, and local economy of the two countries. [The World Bank issued a statement shortly after the quake, indicating its full support in the wake of the catastrophe]([World Bank Statement on Morocco Earthquake](https://www.worldbank.org/en/news/statement/2023/09/09/statement-on-morocco-earthquake). Effective World Bank and donor interventions will require a deep, data-driven understanding of these impacts.
+In September 2023, a powerful 6.8 magnitude earthquake and a series of strong tremors and aftershocks wrought substantial damages in central Morocco. As of time of writing, the death toll has passed 2,800 and the earthquake’s aftermath is substantially impacting the people, infrastructure, and local economy of the two countries. [The World Bank issued a statement shortly after the quake, indicating its full support in the wake of the catastrophe](https://www.worldbank.org/en/news/statement/2023/09/09/statement-on-morocco-earthquake). Effective World Bank and donor interventions will require a deep, data-driven understanding of these impacts.
 
 The Morocco Country Economist and Poverty Team team has requested advisory on data and analytical resources that may support measurement and monitoring of socio-economic impacts, including population displacement and business impacts.
 
