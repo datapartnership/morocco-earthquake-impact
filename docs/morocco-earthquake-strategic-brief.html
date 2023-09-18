@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=927b94d3fcb96560df09" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=927b94d3fcb96560df09" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=927b94d3fcb96560df09" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=927b94d3fcb96560df09" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -38,8 +38,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=927b94d3fcb96560df09" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=927b94d3fcb96560df09" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=927b94d3fcb96560df09"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -69,6 +70,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="prev" title="Support for Morocco Earthquake Impact Analysis" href="../README.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
+    <meta name="docbuild:last-update" content="Sep 18, 2023"/>
   </head>
   
   
@@ -77,6 +79,15 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -352,10 +363,10 @@ const thebe_selector_output = ".output, .cell_output"
 
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
@@ -363,7 +374,7 @@ document.write(`
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -652,7 +663,7 @@ similar projects.</p>
 <td><p>Open Street Maps</p></td>
 <td><p>Open Street Map hosts crowd-sourced points of interest, amenities, roads, and other physical features for Morocco. There is an active community of volunteers updating these maps, including labeling collapsed buildings.</p></td>
 <td><p>Open</p></td>
-<td><p><a class="reference external" href="https://www.openstreetmap.org/#map=4/21.84/82.79">OpenStreetMaps;</a> <span class="xref myst">HdX</span></p></td>
+<td><p><a class="reference external" href="https://www.openstreetmap.org/#map=4/21.84/82.79">OpenStreetMaps;</a> <a class="reference external" href="https://data.humdata.org/event/morocco-earthquake">HdX</a></p></td>
 </tr>
 <tr class="row-odd"><td><p>17</p></td>
 <td><p>Microsoft Building Footprints</p></td>
@@ -661,18 +672,24 @@ similar projects.</p>
 <td><p><a class="reference external" href="https://github.com/microsoft/GlobalMLBuildingFootprints">Building footprint respository</a>;</p></td>
 </tr>
 <tr class="row-even"><td><p>18</p></td>
+<td><p>Google Building Footprints</p></td>
+<td><p>A dataset of building footprints in Morocco, in the area of the 8 September earthquake.</p></td>
+<td><p>Open</p></td>
+<td><p><a class="reference external" href="https://data.humdata.org/organization/google-research">Google footprints on HdX</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>19</p></td>
 <td><p>Meta Electricity Grid Distribution Maps</p></td>
 <td><p>Using <a class="reference external" href="https://github.com/carderne/gridfinder">gridfinder</a>, an open-source tool for predicting the location of electricity network lines using night-time lights satellite imagery and OpenStreetMap data, Meta has released a map that shows the predicted electricity distribution grid and transmission lines.</p></td>
 <td><p>Open</p></td>
 <td><p><a class="reference external" href="https://rdrn.me/gridfinder/">Electricity Distribution Maps</a></p></td>
 </tr>
-<tr class="row-odd"><td><p>19</p></td>
+<tr class="row-even"><td><p>20</p></td>
 <td><p>Ookla Speedtest Intelligence Data</p></td>
 <td><p>Ookla provides internet connectivity data which allows to see pre-earthquake and post-earthquake internet speeds across the country. This can be used as a proxy to identify areas that would be harder to reach and a proxy to identify areas where infrastructure may be damaged because of the earthquake. Quarterly data at a subnational level is available publicly and the more temporally and spatially granular datasets can be accessed through The Partnership.</p></td>
 <td><p>Open and Proprietary</p></td>
 <td><p>Quarterly data: <a class="reference external" href="https://www.ookla.com/ookla-for-good/open-data">Ookla Open Data portal</a> Daily data: accessible by <a class="reference external" href="https://portal.datapartnership.org/submitproposal">submitting a proposal</a> to the <a class="reference external" href="https://portal.datapartnership.org/">Development Data Partnership</a>.</p></td>
 </tr>
-<tr class="row-even"><td><p>20</p></td>
+<tr class="row-odd"><td><p>21</p></td>
 <td><p>Facebook Network Coverage Maps</p></td>
 <td><p>This dataset shows showing where people on Facebook have cellular connectivity. This can be used to measure the impact of the earthquake on cellular network infrastructure.</p></td>
 <td><p>Proprietary</p></td>
@@ -696,13 +713,13 @@ similar projects.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>20</p></td>
+<tr class="row-even"><td><p>22</p></td>
 <td><p>GDLET Project (News data)</p></td>
 <td><p>The GDELT Project “monitors the world’s broadcast, print, and web news from nearly every corner of every country in over 100 languages and identifies the people, locations, organizations, themes, sources, emotions, counts, quotes, images and events.”  While there are some limitations to the use of the GDELT APIs, if the team were interested in tracking news mentions of specific key words or sentiments by time and place, this is a useful starting point, since the data are free and open source.</p></td>
 <td><p>Open</p></td>
 <td><p><a class="reference external" href="https://www.gdeltproject.org/">GDELT Project;</a> For support running queries: <a class="reference external" href="mailto:datlab&#37;&#52;&#48;worldbank&#46;org">datalab<span>&#64;</span>worldbank<span>&#46;</span>org</a></p></td>
 </tr>
-<tr class="row-odd"><td><p>21</p></td>
+<tr class="row-odd"><td><p>23</p></td>
 <td><p>Premise Humanitarian Needs Surveys</p></td>
 <td><p><a class="reference external" href="https://www.linkedin.com/company/premise-data/">Premise</a> is collecting the following humanitarian data in Morocco since the earthquake. <ul><li>Needs assessment (sentiment) - pressing needs in the Contributor’s community</li> <li>Earthquake aid (sentiment) - asking how they feel about government and external response efforts to the earthquake </li><li>Hospitals (observational) - asking Contributors to record the locations of and take photos of hospitals in their areas</li><li>Road conditions (observational) - asking Contributors to document the main roads and motorways in their areas that have been affected by the earthquake</li><li>Earthquake damage (observational) - asking Contributors to identify and take photos and videos of earthquake damage in their areas</li><li>Fuel prices and availability (observational) - asking Contributors to find where fuel is sold and report on the price</li></ul> They can also conduct custom surveys based on the needs of World Bank teams.</p></td>
 <td><p>Proprietary</p></td>
@@ -724,31 +741,31 @@ similar projects.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>22</p></td>
+<tr class="row-even"><td><p>24</p></td>
 <td><p>Outlogic Observation Panel (Mobile Device GPS Data)</p></td>
 <td><p><a class="reference external" href="https://portal.datapartnership.org/datapartner/32">Outlogic</a> collects a mobile location data panel that includes mobility metrics (speed, bearing, altitude, vertical accuracy) and other detection capabilities (IoT, Wi-Fi, and Beacon). The Data Lab team has used these data to track movement across borders between <a class="reference external" href="https://datapartnership.org/syria-economic-monitor/notebooks/mobility/README.html">Syria and Lebanon.</a></p></td>
 <td><p>Proprietary</p></td>
 <td><p><a class="reference external" href="https://portal.datapartnership.org/submitproposal">Submit a proposal</a> to the <a class="reference external" href="https://portal.datapartnership.org/">Development Data Partnership</a></p></td>
 </tr>
-<tr class="row-odd"><td><p>23</p></td>
+<tr class="row-odd"><td><p>25</p></td>
 <td><p>Veraset Movement Data</p></td>
 <td><p><a class="reference external" href="https://portal.datapartnership.org/datapartner/29">Veraset</a> provides a similar service to Outlogic – mobility data comprises population location and movement data derived primarily from mobile device GPS, Wi-Fi, and IoT signals. A similar analysis to Outlogic can be performed using Veraset da</p></td>
 <td><p>Proprietary</p></td>
 <td><p><a class="reference external" href="https://portal.datapartnership.org/submitproposal">Submit a proposal</a> to the <a class="reference external" href="https://portal.datapartnership.org/">Development Data Partnership</a></p></td>
 </tr>
-<tr class="row-even"><td><p>24</p></td>
+<tr class="row-even"><td><p>26</p></td>
 <td><p>Mapbox Movement</p></td>
 <td><p>Mapbox Movement is a global data set derived from 20B+ location updates daily, which may be used to understand aggregate activity, density, and movement over time at the city, regional, or country scale.</p></td>
 <td><p>Proprietary</p></td>
 <td><p><a class="reference external" href="https://portal.datapartnership.org/submitproposal">Submit a proposal</a> to the <a class="reference external" href="https://portal.datapartnership.org/">Development Data Partnership</a></p></td>
 </tr>
-<tr class="row-odd"><td><p>25</p></td>
+<tr class="row-odd"><td><p>27</p></td>
 <td><p>Mapbox Traffic Matrix API</p></td>
 <td><p>The Mapbox Matrix API is built on anonymized mobile device telemetry data and supports large scale traffic and road network analyses. The API may be used to identify areas poorly served by critical services. This dataset has been used in the past by WB colleagues to analyze spatial accessibility of health facilities. The usefulness of this dataset depends on the availability of Mapbox data for Morocco.</p></td>
 <td><p>Proprietary</p></td>
 <td><p><a class="reference external" href="https://portal.datapartnership.org/submitproposal">Submit a proposal</a> to the <a class="reference external" href="https://portal.datapartnership.org/">Development Data Partnership</a></p></td>
 </tr>
-<tr class="row-even"><td><p>26</p></td>
+<tr class="row-even"><td><p>28</p></td>
 <td><p>Facebook Movement Between Places during Crisis</p></td>
 <td><p>This dataset shows how many Facebook users who have enabled Location Services have moved from one area to another and if this movement is more or less than a normal day before a crisis or event</p></td>
 <td><p>Proprietary</p></td>
@@ -1027,11 +1044,10 @@ Bank and in partner international organizations. See more at <a class="reference
 
               
               
-                <footer class="bd-footer-article">
-                  
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="../README.html"
@@ -1051,10 +1067,7 @@ Bank and in partner international organizations. See more at <a class="reference
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -1138,7 +1151,7 @@ By World Bank
   
   <div class="footer-item">
     <p class="last-updated">
-  Last updated on Sep 14, 2023.
+  Last updated on Sep 18, 2023.
   <br/>
 </p>
   </div>
@@ -1162,8 +1175,8 @@ By World Bank
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=927b94d3fcb96560df09"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=927b94d3fcb96560df09"></script>
 
   <footer class="bd-footer">
   </footer>
