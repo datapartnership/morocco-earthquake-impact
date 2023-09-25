@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=927b94d3fcb96560df09" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=927b94d3fcb96560df09" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=927b94d3fcb96560df09" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=927b94d3fcb96560df09" rel="stylesheet" />
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -38,9 +38,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=927b94d3fcb96560df09" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=927b94d3fcb96560df09" />
-  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=927b94d3fcb96560df09"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -70,7 +70,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="prev" title="Support for Morocco Earthquake Impact Analysis" href="../README.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-    <meta name="docbuild:last-update" content="Sep 18, 2023"/>
+    <meta name="docbuild:last-update" content="Sep 25, 2023"/>
   </head>
   
   
@@ -426,6 +426,7 @@ document.write(`
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ii-a-observed-electricity-usage-at-night">II.A. Observed Electricity Usage at Night</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ii-b-internet-connectivity-availability-and-quality">II.B. Internet Connectivity Availability and Quality</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ii-c-damaged-or-inaccessible-local-businesses">II.C. Damaged or Inaccessible Local Businesses</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ii-d-observed-business-facebook-page-activity">II.D. Observed Business Facebook Page Activity</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iii-understanding-social-impacts">III. Understanding Social Impacts</a><ul class="nav section-nav flex-column">
@@ -643,6 +644,12 @@ similar projects.</p>
 <td><p>Search trends data from the Google Trends API can be used to identify trends in search terms of specific words over time. For instance, it can be used to look for ‘flights to Morocco’</p></td>
 <td><p>Proprietary</p></td>
 <td><p><a class="reference external" href="https://portal.datapartnership.org/submitproposal">Submit a proposal</a> to the <a class="reference external" href="https://portal.datapartnership.org/">Development Data Partnership</a>.</p></td>
+</tr>
+<tr class="row-even"><td><p>16</p></td>
+<td><p>Facebook Business Activity Trends</p></td>
+<td><p><a class="reference external" href="https://dataforgood.facebook.com/dfg/tools/business-activity-trends">Business Activity Trends</a> measures relative Facebook<br> business page activity (posts, comments, etc.). Index values are compared to a rolling three month-prior baseline. The data is released daily and at a subnational level, aggregated by sector (e.g., retail, grocery). During crises, the expectation is that activity levels will decline.</p></td>
+<td><p>Proprietary</p></td>
+<td><p><a class="reference external" href="https://portal.datapartnership.org/submitproposal">Submit a proposal</a> to the <a class="reference external" href="https://portal.datapartnership.org/">Development Data Partnership</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -924,6 +931,34 @@ supporting infrastructure indicators:</p>
 </tbody>
 </table>
 </section>
+<section id="ii-d-observed-business-facebook-page-activity">
+<h4>II.D. Observed Business Facebook Page Activity<a class="headerlink" href="#ii-d-observed-business-facebook-page-activity" title="Permalink to this heading">#</a></h4>
+<p>Many local businesses use Facebook as their primary business website. Facebook records levels of activity on these pages, aggregates activity by location and sector, and presents as generalized trend indicators for levels of business activity.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Topic</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Data Sources</p></td>
+<td><p>Business Activity Trends from Meta (#20) \</p></td>
+</tr>
+<tr class="row-odd"><td><p>General Approach</p></td>
+<td><p>1.     Identify areas where there is a change in Business activity compared to a baseline in November 2022. <br>2.     Identify if the change can be attributed to the earthquake or just change in network connectivity by overlaying with geospatial earthquake affected area map and network connectivity map.<br/>3. An example of this can be seen in our work for <a class="reference external" href="https://datapartnership.org/turkiye-earthquake-impact/notebooks/business-activity-trends/README.html">Turkiye Earthquake Impact</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Outputs</p></td>
+<td><p><u><span>Datasets</span></u>. All datasets used in the analysis will be documented and hosted on the World Bank Development Data Hub (for ease of sharing) and a project SharePoint (for the CMU’s ease of use).<br><u><span>Code and Documentation</span></u>. All methods will be fully documented and reproducible, so that the analysis can be quickly updated by the CMU as new data are available.<br><u><span>Indicators</span></u>. Sectors that have been potentially impacted due to the earthquake \</p></td>
+</tr>
+<tr class="row-odd"><td><p>Limitations</p></td>
+<td><p>Business Activity Trends captures the rate of posting (posts and visits) on Facebook business pages. Thus, offline and off-Facebook activities are not captured and along with social media usage, connectivity and cultural customs, may contribute as serious limitation and source of bias. In other words. the index is not representative of the other business happening in the area.<br>There is also a bias towards the service sector as they are more likely to be active on Facebook.</p></td>
+</tr>
+<tr class="row-even"><td><p>Estimated Resources</p></td>
+<td><p><u><span>Staff Hours</span></u>. 16 hours GF-level staff time</p></td>
+</tr>
+</tbody>
+</table>
+</section>
 </section>
 <section id="iii-understanding-social-impacts">
 <h3>III. Understanding Social Impacts<a class="headerlink" href="#iii-understanding-social-impacts" title="Permalink to this heading">#</a></h3>
@@ -1107,6 +1142,7 @@ Bank and in partner international organizations. See more at <a class="reference
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ii-a-observed-electricity-usage-at-night">II.A. Observed Electricity Usage at Night</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ii-b-internet-connectivity-availability-and-quality">II.B. Internet Connectivity Availability and Quality</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ii-c-damaged-or-inaccessible-local-businesses">II.C. Damaged or Inaccessible Local Businesses</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ii-d-observed-business-facebook-page-activity">II.D. Observed Business Facebook Page Activity</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iii-understanding-social-impacts">III. Understanding Social Impacts</a><ul class="nav section-nav flex-column">
@@ -1151,7 +1187,7 @@ By World Bank
   
   <div class="footer-item">
     <p class="last-updated">
-  Last updated on Sep 18, 2023.
+  Last updated on Sep 25, 2023.
   <br/>
 </p>
   </div>
@@ -1175,8 +1211,8 @@ By World Bank
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=927b94d3fcb96560df09"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=927b94d3fcb96560df09"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
 
   <footer class="bd-footer">
   </footer>
