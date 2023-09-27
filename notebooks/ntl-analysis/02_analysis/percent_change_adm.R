@@ -1,11 +1,20 @@
 # Percent Change Maps
 
+mi_sf <- read_sf(file.path(data_dir, "earthquake_intensity", "shape", "mi.shp"))
+
+mi_strong_sf <- mi_sf[mi_sf$PARAMVALUE >= 5.4,]
+mi_strong_sf <- mi_strong_sf %>%
+  mutate(id = 1) %>%
+  group_by(id) %>%
+  dplyr::summarise(geometry = st_union(geometry)) %>%
+  ungroup()
+
 for(roi_name in c("adm1", "adm2", "adm3", "adm4")){
   
   # Load data --------------------------------------------------------------------
   ntl_df <- readRDS(file.path(ntl_dir, "aggregated-to-polygons", roi_name, 
                               paste0(roi_name, "_annual_ntl.Rds")))
-  
+
   # Load ROI ---------------------------------------------------------------------
   if(roi_name == "adm0"){
     roi_sf <- read_sf(file.path(admin_bnd_dir, "gadm41_MAR_shp", "gadm41_MAR_0.shp"))
@@ -71,8 +80,13 @@ for(roi_name in c("adm1", "adm2", "adm3", "adm4")){
     geom_sf(data = roi_long_sf,
             aes(fill = value,
                 color = value)) +
+    geom_sf(data = mi_strong_sf,
+            fill = NA,
+            color = "black",
+            linewidth = 0.1) + 
     labs(fill = "% Change\nin NTL",
-         color = "% Change\nin NTL") +
+         color = "% Change\nin NTL",
+         note = "Black boundary indicates earthquake magnitude of 5.4 and above, indicating at least slight damage") +
     coord_sf() +
     theme_void() +
     scale_fill_gradient2(low = "red", high = "forestgreen", mid = "white") +

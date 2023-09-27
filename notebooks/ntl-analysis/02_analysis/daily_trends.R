@@ -40,4 +40,4 @@ ntl_df %>%
              scales = "free_y")
 
 ggsave(filename = file.path(figures_dir, "daily_trends_adm1.png"),
-       height = 4, width = 8)
+       height = 5, width = 10)
