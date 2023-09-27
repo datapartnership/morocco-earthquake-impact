@@ -60,7 +60,7 @@ p <- ggplot() +
                        high = "red",
                        midpoint = 4.5) +
   labs(title = "Annual Nighttime Lights",
-       note = "White boundary indicates earthquake magnitude of 5.4 and above, indicating at least slight damage") +
+       caption = "White boundary indicates earthquake magnitude of 5.4 and above, indicating at least slight damage") +
   coord_sf() + 
   theme_void() +
   theme(plot.title = element_text(face = "bold", hjust = 0.5),
@@ -91,7 +91,7 @@ for(year_i in 2012:2022){
                          high = "red",
                          midpoint = 4.5) +
     labs(title = paste0("Nighttime Lights: ", year_i),
-         note = "White boundary indicates earthquake magnitude of 5.4 and above, indicating at least slight damage") +
+         caption = "White boundary indicates earthquake magnitude of 5.4 and\nabove, indicating at least slight damage") +
     coord_sf() + 
     theme_void() +
     theme(plot.title = element_text(face = "bold", hjust = 0.5),

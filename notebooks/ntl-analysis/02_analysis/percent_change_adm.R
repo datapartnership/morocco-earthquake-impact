@@ -86,7 +86,7 @@ for(roi_name in c("adm1", "adm2", "adm3", "adm4")){
             linewidth = 0.1) + 
     labs(fill = "% Change\nin NTL",
          color = "% Change\nin NTL",
-         note = "Black boundary indicates earthquake magnitude of 5.4 and above, indicating at least slight damage") +
+         caption = "Black boundary indicates earthquake magnitude of 5.4 and above, indicating at least slight damage") +
     coord_sf() +
     theme_void() +
     scale_fill_gradient2(low = "red", high = "forestgreen", mid = "white") +
