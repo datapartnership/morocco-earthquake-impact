@@ -17,13 +17,20 @@ for(roi_name in c("adm2", "adm3")){
   #### Prep name
   if(roi_name == "adm2"){
     
-    ntl_2023_df <- ntl_daily_df %>%
+    ntl_2023pre_df <- ntl_daily_df %>%
+      dplyr::filter(date <= ymd("2023-09-07")) %>%
+      group_by(NAME_1, NAME_2) %>%
+      dplyr::summarise(ntl_bm_mean = mean(ntl_bm_mean, na.rm = T)) %>%
+      ungroup() %>%
+      dplyr::rename(pre_2023 = ntl_bm_mean)
+    
+    ntl_2023post_df <- ntl_daily_df %>%
       dplyr::filter(date >= ymd("2023-09-09")) %>%
       group_by(NAME_1, NAME_2) %>%
       dplyr::summarise(ntl_bm_mean = mean(ntl_bm_mean, na.rm = T)) %>%
       ungroup() %>%
-      dplyr::rename(`2023` = ntl_bm_mean)
-    
+      dplyr::rename(post_2023 = ntl_bm_mean)
+
     ntl_14_22_df <- ntl_annual_df %>%
       dplyr::filter(year %in% c(2014, 2022)) %>%
       dplyr::select(year, NAME_1, NAME_2, ntl_bm_mean) %>%
@@ -34,18 +41,26 @@ for(roi_name in c("adm2", "adm3")){
       dplyr::select(NAME_1, NAME_2, eq_mi)
     
     ntl_df <- ntl_14_22_df %>%
-      left_join(ntl_2023_df, by = c("NAME_1", "NAME_2")) %>%
+      left_join(ntl_2023post_df, by = c("NAME_1", "NAME_2")) %>%
+      left_join(ntl_2023pre_df, by = c("NAME_1", "NAME_2")) %>%
       left_join(eq_df, by = c("NAME_1", "NAME_2"))
   }
   
   if(roi_name == "adm3"){
     
-    ntl_2023_df <- ntl_daily_df %>%
-      dplyr::filter(date >= ymd("2023-08-09")) %>%
+    ntl_2023post_df <- ntl_daily_df %>%
+      dplyr::filter(date >= ymd("2023-09-09")) %>%
       group_by(NAME_1, NAME_2, NAME_3) %>%
       dplyr::summarise(ntl_bm_mean = mean(ntl_bm_mean, na.rm = T)) %>%
       ungroup() %>%
-      dplyr::rename(`2023` = ntl_bm_mean)
+      dplyr::rename(post_2023 = ntl_bm_mean)
+    
+    ntl_2023pre_df <- ntl_daily_df %>%
+      dplyr::filter(date <= ymd("2023-09-07")) %>%
+      group_by(NAME_1, NAME_2, NAME_3) %>%
+      dplyr::summarise(ntl_bm_mean = mean(ntl_bm_mean, na.rm = T)) %>%
+      ungroup() %>%
+      dplyr::rename(pre_2023 = ntl_bm_mean)
     
     ntl_14_22_df <- ntl_annual_df %>%
       dplyr::filter(year %in% c(2014, 2022)) %>%
@@ -57,7 +72,8 @@ for(roi_name in c("adm2", "adm3")){
       dplyr::select(NAME_1, NAME_2, NAME_3, eq_mi)
     
     ntl_df <- ntl_14_22_df %>%
-      left_join(ntl_2023_df, by = c("NAME_1", "NAME_2", "NAME_3")) %>%
+      left_join(ntl_2023post_df, by = c("NAME_1", "NAME_2", "NAME_3")) %>%
+      left_join(ntl_2023pre_df, by = c("NAME_1", "NAME_2", "NAME_3")) %>%
       left_join(eq_df, by = c("NAME_1", "NAME_2", "NAME_3"))
   }
   
@@ -66,28 +82,31 @@ for(roi_name in c("adm2", "adm3")){
   
   # Export ---------------------------------------------------------------------
   ntl_df <- ntl_df %>%
+    dplyr::select(-"2022") %>%
     dplyr::rename(yr2014 = "2014",
-                  yr2022 = "2022",
-                  yr2023 = "2023")
+                  yr2023_pre_eq = "pre_2023",
+                  yr2023_post_eq = "post_2023")
   
   write_csv(ntl_df, file.path(tables_dir,
+                              "ntl_adm2_adm3",
                               paste0("ntl_",roi_name,".csv")))
   
   # Make png table -------------------------------------------------------------
   if(roi_name == "adm2"){
     ntl_df %>%
-      dplyr::select(NAME_1, NAME_2, eq_mi, yr2014, yr2022, yr2023) %>%
+      dplyr::select(NAME_1, NAME_2, eq_mi, yr2014, yr2023_pre_eq, yr2023_post_eq) %>%
       arrange(-eq_mi) %>%
       head(30) %>%
       dplyr::mutate(yr2014 = round(yr2014, 2),
-                    yr2022 = round(yr2022, 2),
-                    yr2023 = round(yr2023, 2)) %>%
+                    #yr2022 = round(yr2022, 2),
+                    yr2023_pre_eq = round(yr2023_pre_eq, 2),
+                    yr2023_post_eq = round(yr2023_post_eq, 2)) %>%
       dplyr::rename("ADM 1" = NAME_1,
                     "ADM 2" = NAME_2,
                     "EQ: MI" = eq_mi,
-                    "NTL: 2014" = yr2014,
-                    "NTL: 2022" = yr2022,
-                    "NTL: 2023" = yr2023) %>%
+                    "2014" = yr2014,
+                    "2023, Pre Eq." = yr2023_pre_eq,
+                    "2023, Post Eq." = yr2023_post_eq) %>%
       gt() %>%
       # gt_color_rows(c(`PC: 19 to 22`,
       #                 `PC: 20 to 22`,
@@ -99,19 +118,20 @@ for(roi_name in c("adm2", "adm3")){
   
   if(roi_name == "adm3"){
     ntl_df %>%
-      dplyr::select(NAME_1, NAME_2, NAME_3, eq_mi, yr2014, yr2022, yr2023) %>%
+      dplyr::select(NAME_1, NAME_2, NAME_3, eq_mi, yr2014, yr2023_pre_eq, yr2023_post_eq) %>%
       arrange(-eq_mi) %>%
       head(30) %>%
       dplyr::mutate(yr2014 = round(yr2014, 2),
-                    yr2022 = round(yr2022, 2),
-                    yr2023 = round(yr2023, 2)) %>%
+                    #yr2022 = round(yr2022, 2),
+                    yr2023_pre_eq = round(yr2023_pre_eq, 2),
+                    yr2023_post_eq = round(yr2023_post_eq, 2)) %>%
       dplyr::rename("ADM 1" = NAME_1,
                     "ADM 2" = NAME_2,
                     "ADM 3" = NAME_3,
                     "EQ: MI" = eq_mi,
-                    "NTL: 2014" = yr2014,
-                    "NTL: 2022" = yr2022,
-                    "NTL: 2023" = yr2023) %>%
+                    "2014" = yr2014,
+                    "2023, Pre Eq." = yr2023_pre_eq,
+                    "2023, Post Eq." = yr2023_post_eq) %>%
       gt() %>%
       # gt_color_rows(c(`PC: 19 to 22`,
       #                 `PC: 20 to 22`,
