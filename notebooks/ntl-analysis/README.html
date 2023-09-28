@@ -70,7 +70,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="prev" title="How-to guide SPI-based drought characteristics" href="../../docs/drought-howto-characteristics.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-    <meta name="docbuild:last-update" content="Sep 25, 2023"/>
+    <meta name="docbuild:last-update" content="Sep 28, 2023"/>
   </head>
   
   
@@ -407,6 +407,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#map-of-nighttime-lights">Map of Nighttime Lights</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#trends-in-nighttime-lights-annual">Trends in Nighttime Lights: Annual</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#trends-in-nighttime-lights-daily">Trends in Nighttime Lights: Daily</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nighttime-lights-adm2-and-adm3">Nighttime Lights: ADM2 and ADM3</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#change-in-nighttime-lights">Change in Nighttime Lights</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#maps">Maps</a></li>
 </ul>
@@ -453,7 +454,7 @@ document.write(`
 <h2>Results<a class="headerlink" href="#results" title="Permalink to this heading">#</a></h2>
 <section id="map-of-nighttime-lights">
 <h3>Map of Nighttime Lights<a class="headerlink" href="#map-of-nighttime-lights" title="Permalink to this heading">#</a></h3>
-<p>The below figure shows maps of nighttime lights in different years.</p>
+<p>The below figure shows maps of nighttime lights in different years. Maps of individual years for all years can be found <a class="reference external" href="https://github.com/datapartnership/morocco-earthquake-impact/tree/main/notebooks/ntl-analysis/figures/annual_ntl_maps">here</a>.</p>
 <figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../../_images/ntl_map_12_17_22.png"><img alt="../../_images/ntl_map_12_17_22.png" src="../../_images/ntl_map_12_17_22.png" style="width: 1200.0px; height: 750.0px;" /></a>
 <figcaption>
@@ -487,9 +488,26 @@ document.write(`
 </figcaption>
 </figure>
 <figure class="align-center" id="id5">
-<a class="reference internal image-reference" href="../../_images/daily_trends_adm1.png"><img alt="../../_images/daily_trends_adm1.png" src="../../_images/daily_trends_adm1.png" style="width: 960.0px; height: 480.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/daily_trends_adm1.png"><img alt="../../_images/daily_trends_adm1.png" src="../../_images/daily_trends_adm1.png" style="width: 1200.0px; height: 600.0px;" /></a>
 <figcaption>
 <p><span class="caption-number">Fig. 5 </span><span class="caption-text">Annual Trends in Nighttime Lights: ADM 1 Level</span><a class="headerlink" href="#id5" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="nighttime-lights-adm2-and-adm3">
+<h3>Nighttime Lights: ADM2 and ADM3<a class="headerlink" href="#nighttime-lights-adm2-and-adm3" title="Permalink to this heading">#</a></h3>
+<p>The below tables show average nighttime lights at ADM2 and ADM3 levels for 2014, 2023 (before the earthquake), and 2023 (after the earthquake). For 2023, we take the average of daily nighttime lights for the respective time periods.</p>
+<p>The below tables show the 30 administrative zones with the largest earthquake intensities. The csv files <a class="reference external" href="https://github.com/datapartnership/morocco-earthquake-impact/tree/main/notebooks/ntl-analysis/tables/ntl_adm2_adm3">here</a> provide data for all administrative zones.</p>
+<figure class="align-center" id="id6">
+<a class="reference internal image-reference" href="../../_images/eq_table_adm2.png"><img alt="../../_images/eq_table_adm2.png" src="../../_images/eq_table_adm2.png" style="width: 603.2px; height: 898.4000000000001px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 6 </span><span class="caption-text">Annual Nighttime Lights: ADM 2 Level</span><a class="headerlink" href="#id6" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id7">
+<a class="reference internal image-reference" href="../../_images/eq_table_adm3.png"><img alt="../../_images/eq_table_adm3.png" src="../../_images/eq_table_adm3.png" style="width: 752.0px; height: 898.4000000000001px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 7 </span><span class="caption-text">Annual Nighttime Lights: ADM 3 Level</span><a class="headerlink" href="#id7" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -498,28 +516,28 @@ document.write(`
 <p>This section shows the percent change in nighttime lights from 2019, 2020, 2021 until 2022 at different administrative levels.</p>
 <section id="maps">
 <h4>Maps<a class="headerlink" href="#maps" title="Permalink to this heading">#</a></h4>
-<figure class="align-center" id="id6">
+<figure class="align-center" id="id8">
 <a class="reference internal image-reference" href="../../_images/pc_map_adm1.png"><img alt="../../_images/pc_map_adm1.png" src="../../_images/pc_map_adm1.png" style="width: 960.0px; height: 600.0px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 6 </span><span class="caption-text">Percent Change in Nighttime Lights: ADM 1</span><a class="headerlink" href="#id6" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<figure class="align-center" id="id7">
-<a class="reference internal image-reference" href="../../_images/pc_map_adm2.png"><img alt="../../_images/pc_map_adm2.png" src="../../_images/pc_map_adm2.png" style="width: 960.0px; height: 600.0px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 7 </span><span class="caption-text">Percent Change in Nighttime Lights: ADM 2</span><a class="headerlink" href="#id7" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<figure class="align-center" id="id8">
-<a class="reference internal image-reference" href="../../_images/pc_map_adm3.png"><img alt="../../_images/pc_map_adm3.png" src="../../_images/pc_map_adm3.png" style="width: 960.0px; height: 600.0px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 8 </span><span class="caption-text">Percent Change in Nighttime Lights: ADM 3</span><a class="headerlink" href="#id8" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 8 </span><span class="caption-text">Percent Change in Nighttime Lights: ADM 1</span><a class="headerlink" href="#id8" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <figure class="align-center" id="id9">
+<a class="reference internal image-reference" href="../../_images/pc_map_adm2.png"><img alt="../../_images/pc_map_adm2.png" src="../../_images/pc_map_adm2.png" style="width: 960.0px; height: 600.0px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 9 </span><span class="caption-text">Percent Change in Nighttime Lights: ADM 2</span><a class="headerlink" href="#id9" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id10">
+<a class="reference internal image-reference" href="../../_images/pc_map_adm3.png"><img alt="../../_images/pc_map_adm3.png" src="../../_images/pc_map_adm3.png" style="width: 960.0px; height: 600.0px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 10 </span><span class="caption-text">Percent Change in Nighttime Lights: ADM 3</span><a class="headerlink" href="#id10" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id11">
 <a class="reference internal image-reference" href="../../_images/pc_map_adm4.png"><img alt="../../_images/pc_map_adm4.png" src="../../_images/pc_map_adm4.png" style="width: 960.0px; height: 600.0px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 9 </span><span class="caption-text">Percent Change in Nighttime Lights: ADM 4</span><a class="headerlink" href="#id9" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 11 </span><span class="caption-text">Percent Change in Nighttime Lights: ADM 4</span><a class="headerlink" href="#id11" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -596,6 +614,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#map-of-nighttime-lights">Map of Nighttime Lights</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#trends-in-nighttime-lights-annual">Trends in Nighttime Lights: Annual</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#trends-in-nighttime-lights-daily">Trends in Nighttime Lights: Daily</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nighttime-lights-adm2-and-adm3">Nighttime Lights: ADM2 and ADM3</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#change-in-nighttime-lights">Change in Nighttime Lights</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#maps">Maps</a></li>
 </ul>
@@ -627,7 +646,7 @@ By World Bank
   
   <div class="footer-item">
     <p class="last-updated">
-  Last updated on Sep 25, 2023.
+  Last updated on Sep 28, 2023.
   <br/>
 </p>
   </div>
