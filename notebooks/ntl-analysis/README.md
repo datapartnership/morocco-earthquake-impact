@@ -29,7 +29,7 @@ The following code produces the figures:
 
 ### Map of Nighttime Lights
 
-The below figure shows maps of nighttime lights in different years.
+The below figure shows maps of nighttime lights in different years. Maps of individual years for all years can be found [here](https://github.com/datapartnership/morocco-earthquake-impact/tree/main/notebooks/ntl-analysis/figures/annual_ntl_maps).
 
 ```{figure} figures/ntl_map_12_17_22.png
 ---
@@ -77,6 +77,28 @@ scale: 40%
 align: center
 ---
 Annual Trends in Nighttime Lights: ADM 1 Level
+```
+
+### Nighttime Lights: ADM2 and ADM3
+
+The below tables show average nighttime lights at ADM2 and ADM3 levels for 2014, 2023 (before the earthquake), and 2023 (after the earthquake). For 2023, we take the average of daily nighttime lights for the respective time periods.
+
+The below tables show the 30 administrative zones with the largest earthquake intensities. The csv files [here](https://github.com/datapartnership/morocco-earthquake-impact/tree/main/notebooks/ntl-analysis/tables/ntl_adm2_adm3) provide data for all administrative zones.
+
+```{figure} figures/eq_table_adm2.png
+---
+scale: 40%
+align: center
+---
+Annual Nighttime Lights: ADM 2 Level
+```
+
+```{figure} figures/eq_table_adm3.png
+---
+scale: 40%
+align: center
+---
+Annual Nighttime Lights: ADM 3 Level
 ```
 
 ### Change in Nighttime Lights

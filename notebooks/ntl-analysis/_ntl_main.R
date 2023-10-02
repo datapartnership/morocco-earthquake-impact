@@ -15,7 +15,8 @@ git_ntl_dir          <- file.path(git_dir, "notebooks", "ntl-analysis")
 git_ntl_clean_dir    <- file.path(git_ntl_dir, "01_clean_data")
 git_ntl_analysis_dir <- file.path(git_ntl_dir, "02_analysis")
 
-figures_dir   <- file.path(git_dir, "notebooks", "ntl-analysis", "figures")
+figures_dir  <- file.path(git_dir, "notebooks", "ntl-analysis", "figures")
+tables_dir   <- file.path(git_dir, "notebooks", "ntl-analysis", "tables")
 
 # Packages ---------------------------------------------------------------------
 # devtools::install_github("ramarty/blackmarbler")
@@ -33,6 +34,8 @@ library(blackmarbler)
 library(ggrepel)
 library(gt)
 library(gtExtras)
+library(leaflet)
+library(leaflet.extras)
 
 # Code -------------------------------------------------------------------------
 if(F){
@@ -44,6 +47,7 @@ if(F){
   #### Analysis (figures)
   source(file.path(git_ntl_analysis_dir, "map_ntl_annual_2022.R"))
   source(file.path(git_ntl_analysis_dir, "annual_trends.R"))
+  source(file.path(git_ntl_analysis_dir, "daily_trends.R"))
   #source(file.path(git_ntl_analysis_dir, "monthly_trends.R"))
   source(file.path(git_ntl_analysis_dir, "percent_change_adm.R"))
 
