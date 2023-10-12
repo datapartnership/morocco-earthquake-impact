@@ -16,6 +16,7 @@ parts:
       - file: notebooks/business-activity-trends/README.md
         sections:
         - file: notebooks/business-activity-trends/01-business-activity-trends.ipynb
+      - file: notebooks/network-connectivity/meta-network-connectivity.ipynb
       - file: docs/drought-index
         sections:
         - file: docs/drought-summary
