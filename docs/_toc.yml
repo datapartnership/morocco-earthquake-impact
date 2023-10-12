@@ -12,26 +12,23 @@ parts:
       - file: docs/foundational_datasets_and_data_products.md
   - caption: Data Products
     chapters:
-        - caption: Damage Assessment
-          chapters:
-          - file: notebooks/earthquake-intensity/earthquake_intensity.ipynb
-          - file: notebooks/population/population/affected-population.ipynb
-          - file: notebooks/network-connectivity/meta-network-connectivity.ipynb
-          - file: notebooks/population/settlement.ipynb
+      - file: notebooks/earthquake-intensity/earthquake_intensity.ipynb            
+      - file: notebooks/population/population/affected-population.ipynb
+      - file: notebooks/network-connectivity/meta-network-connectivity.ipynb
+      - file: notebooks/population/settlement.ipynb
       - file: notebooks/business-activity-trends/README.md
         sections:
         - file: notebooks/business-activity-trends/01-business-activity-trends.ipynb
-        - caption: Needs Assessment
-          chapters:
-          - file: notebooks/google_trends/Morocco_GoogleTrends.ipynb
-          - file: notebooks/premise-survey/premise.ipynb
+      - file: notebooks/google_trends/Morocco_GoogleTrends.ipynb
+      - file: notebooks/premise-survey/premise.ipynb
+      - file: notebooks/ntl-analysis/README.md
       - file: docs/drought-index
         sections:
         - file: docs/drought-summary
         - file: docs/drought-eo
         - file: docs/drought-howto-spianalysis
         - file: docs/drought-howto-characteristics
-      - file: notebooks/ntl-analysis/README.md
+      
   - caption: Sample Indicators and Insights
     chapters:
       - file: notebooks/visualizing-drought.ipynb
