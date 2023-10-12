@@ -8,7 +8,11 @@
 # -- (c) Simulated DMSP (from VIIRS) [2014 - 2021]
 # 3. Aggregate monthly data, VIIRS Black Marble only [2012 - present]
 
-for(roi_name in c("adm0", "adm1", "adm2", "adm3", "adm4")){
+OUT_PATH <- file.path(data_dir, "earthquake_intensity", "sepate_files_by_intensity")
+
+for(roi_name in c("adm0", "adm1", "adm2", "adm3", "adm4", 
+                  "mi_indiv",
+                  "mi_3to5", "mi_4to6", "mi_7to9")){
   
   # Make Directories -------------------------------------------------------------
   dir.create(file.path(ntl_dir, "aggregated-to-polygons", roi_name))
@@ -37,6 +41,11 @@ for(roi_name in c("adm0", "adm1", "adm2", "adm3", "adm4")){
     roi_sf <- read_sf(file.path(admin_bnd_dir, "gadm41_MAR_shp", "gadm41_MAR_4.shp"))
   } 
   
+  if(str_detect(roi_name, "mi")){
+    roi_sf <- read_sf(file.path(data_dir, "earthquake_intensity", "separate_files_by_intensity", 
+                                paste0(roi_name, ".geojson")))
+  }
+  
   roi_sf$adm_id <- 1:nrow(roi_sf)
   
   # Aggregate annual -------------------------------------------------------------
@@ -50,6 +59,14 @@ for(roi_name in c("adm0", "adm1", "adm2", "adm3", "adm4")){
       bm_r <- raster(file.path(ntl_dir, "ntl-rasters", "blackmarble", "annual", paste0("VNP46A4_t",year,".tif")))
       
       roi_sf$ntl_bm_mean   <- exact_extract(bm_r, roi_sf, 'mean')
+      roi_sf$ntl_bm_q50     <- exact_extract(bm_r, roi_sf, 'quantile', quantiles = 0.5)
+      roi_sf$ntl_bm_q60     <- exact_extract(bm_r, roi_sf, 'quantile', quantiles = 0.6)
+      roi_sf$ntl_bm_q70     <- exact_extract(bm_r, roi_sf, 'quantile', quantiles = 0.7)
+      roi_sf$ntl_bm_q80     <- exact_extract(bm_r, roi_sf, 'quantile', quantiles = 0.8)
+      roi_sf$ntl_bm_q90     <- exact_extract(bm_r, roi_sf, 'quantile', quantiles = 0.9)
+      roi_sf$ntl_bm_q95     <- exact_extract(bm_r, roi_sf, 'quantile', quantiles = 0.95)
+      roi_sf$ntl_bm_q99     <- exact_extract(bm_r, roi_sf, 'quantile', quantiles = 0.99)
+      
       roi_sf$year <- year
       
       roi_df <- roi_sf
@@ -89,6 +106,13 @@ for(roi_name in c("adm0", "adm1", "adm2", "adm3", "adm4")){
       bm_r <- raster(file.path(ntl_dir, "ntl-rasters", "blackmarble", "monthly", r_month_i))
       
       roi_sf$ntl_bm_mean   <- exact_extract(bm_r, roi_sf, 'mean')
+      roi_sf$ntl_bm_q50     <- exact_extract(bm_r, roi_sf, 'quantile', quantiles = 0.5)
+      roi_sf$ntl_bm_q60     <- exact_extract(bm_r, roi_sf, 'quantile', quantiles = 0.6)
+      roi_sf$ntl_bm_q70     <- exact_extract(bm_r, roi_sf, 'quantile', quantiles = 0.7)
+      roi_sf$ntl_bm_q80     <- exact_extract(bm_r, roi_sf, 'quantile', quantiles = 0.8)
+      roi_sf$ntl_bm_q90     <- exact_extract(bm_r, roi_sf, 'quantile', quantiles = 0.9)
+      roi_sf$ntl_bm_q95     <- exact_extract(bm_r, roi_sf, 'quantile', quantiles = 0.95)
+      roi_sf$ntl_bm_q99     <- exact_extract(bm_r, roi_sf, 'quantile', quantiles = 0.99)
       
       roi_sf$date <- month_i %>%
         str_replace_all("_", "-") %>%
@@ -128,6 +152,13 @@ for(roi_name in c("adm0", "adm1", "adm2", "adm3", "adm4")){
       bm_r <- raster(file.path(ntl_dir, "ntl-rasters", "blackmarble", "daily", r_day_i))
       
       roi_sf$ntl_bm_mean   <- exact_extract(bm_r, roi_sf, 'mean')
+      roi_sf$ntl_bm_q50     <- exact_extract(bm_r, roi_sf, 'quantile', quantiles = 0.5)
+      roi_sf$ntl_bm_q60     <- exact_extract(bm_r, roi_sf, 'quantile', quantiles = 0.6)
+      roi_sf$ntl_bm_q70     <- exact_extract(bm_r, roi_sf, 'quantile', quantiles = 0.7)
+      roi_sf$ntl_bm_q80     <- exact_extract(bm_r, roi_sf, 'quantile', quantiles = 0.8)
+      roi_sf$ntl_bm_q90     <- exact_extract(bm_r, roi_sf, 'quantile', quantiles = 0.9)
+      roi_sf$ntl_bm_q95     <- exact_extract(bm_r, roi_sf, 'quantile', quantiles = 0.95)
+      roi_sf$ntl_bm_q99     <- exact_extract(bm_r, roi_sf, 'quantile', quantiles = 0.99)
       
       roi_sf$date <- day_i %>%
         str_replace_all("_", "-") %>%

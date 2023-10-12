@@ -2,7 +2,7 @@
 
 mi_sf <- read_sf(file.path(data_dir, "earthquake_intensity", "shape", "mi.shp"))
 
-mi_strong_sf <- mi_sf[mi_sf$PARAMVALUE >= 5.4,]
+mi_strong_sf <- mi_sf[mi_sf$PARAMVALUE >= 7,]
 mi_strong_sf <- mi_strong_sf %>%
   mutate(id = 1) %>%
   group_by(id) %>%
@@ -83,10 +83,10 @@ for(roi_name in c("adm1", "adm2", "adm3", "adm4")){
     geom_sf(data = mi_strong_sf,
             fill = NA,
             color = "black",
-            linewidth = 0.1) + 
+            linewidth = 0.2) + 
     labs(fill = "% Change\nin NTL",
          color = "% Change\nin NTL",
-         caption = "Black boundary indicates earthquake magnitude of 5.4 and above, indicating at least slight damage") +
+         caption = "Black boundary indicates earthquake magnitude of 7 and above") +
     coord_sf() +
     theme_void() +
     scale_fill_gradient2(low = "red", high = "forestgreen", mid = "white") +

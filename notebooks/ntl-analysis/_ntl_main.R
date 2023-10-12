@@ -43,6 +43,7 @@ if(F){
   #### Clean data
   source(file.path(git_ntl_clean_dir, "01_download_blackmarble.R"))
   source(file.path(git_ntl_clean_dir, "02_extract_to_polygons.R"))
+  source(file.path(git_ntl_clean_dir, "03_eq_intensity_by_adm.R"))
   
   #### Analysis (figures)
   source(file.path(git_ntl_analysis_dir, "adm_tables.R"))
