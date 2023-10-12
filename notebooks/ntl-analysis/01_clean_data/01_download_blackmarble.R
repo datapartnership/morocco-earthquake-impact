@@ -6,7 +6,7 @@ bearer <- file.path(ntl_dir, "blackmarble-bearer-token", "bearer_bm.csv") %>%
   read_csv() %>%
   pull("token")
 
-# Load Lebanon boundaries
+# Load boundaries
 roi_sf <- read_sf(file.path(admin_bnd_dir, "gadm41_MAR_shp", "gadm41_MAR_0.shp"))
 
 # Download data ----------------------------------------------------------------
@@ -28,7 +28,7 @@ bm_raster(roi_sf = roi_sf,
 
 bm_raster(roi_sf = roi_sf,
           product_id = "VNP46A2",
-          date = seq.Date(from = ymd("2023-08-01"), to = Sys.Date(), by = 1),
+          date = seq.Date(from = ymd("2023-08-01"), to = Sys.Date(), by = 1) %>% rev(),
           bearer = bearer,
           quality_flag_rm = c(255,2),
           output_location_type = "file",

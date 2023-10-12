@@ -12,7 +12,7 @@ mi_sf <- read_sf(file.path(data_dir, "earthquake_intensity", "shape", "mi.shp"))
 
 # https://www.mtu.edu/geo/community/seismology/learn/earthquake-measure/magnitude/
 #mi_strong_sf <- mi_sf[mi_sf$PARAMVALUE == 5.4,]
-mi_strong_sf <- mi_sf[mi_sf$PARAMVALUE >= 5.4,]
+mi_strong_sf <- mi_sf[mi_sf$PARAMVALUE >= 7,]
 mi_strong_sf <- mi_strong_sf %>%
   mutate(id = 1) %>%
   group_by(id) %>%
@@ -54,13 +54,13 @@ p <- ggplot() +
   geom_sf(data = mi_strong_sf,
           fill = NA,
           color = "white",
-          linewidth = 0.1) + 
+          linewidth = 0.2) + 
   scale_fill_gradient2(low = "black",
                        mid = "yellow",
                        high = "red",
                        midpoint = 4.5) +
   labs(title = "Annual Nighttime Lights",
-       caption = "White boundary indicates earthquake magnitude of 5.4 and above, indicating at least slight damage") +
+       caption = "White boundary indicates earthquake magnitude of 7 and above") + # , indicating at least slight damage
   coord_sf() + 
   theme_void() +
   theme(plot.title = element_text(face = "bold", hjust = 0.5),
@@ -85,13 +85,13 @@ for(year_i in 2012:2022){
     geom_sf(data = mi_strong_sf,
             fill = NA,
             color = "white",
-            linewidth = 0.1) + 
+            linewidth = 0.2) + 
     scale_fill_gradient2(low = "black",
                          mid = "yellow",
                          high = "red",
                          midpoint = 4.5) +
     labs(title = paste0("Nighttime Lights: ", year_i),
-         caption = "White boundary indicates earthquake magnitude of 5.4 and\nabove, indicating at least slight damage") +
+         caption = "White boundary indicates earthquake magnitude of 7 and above") + # , indicating at least slight damage
     coord_sf() + 
     theme_void() +
     theme(plot.title = element_text(face = "bold", hjust = 0.5),

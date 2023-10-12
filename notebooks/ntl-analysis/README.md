@@ -61,14 +61,14 @@ Annual Trends in Nighttime Lights: ADM 1 Level
 
 ### Trends in Nighttime Lights: Daily
 
-The below figures show trends in nighttime lights across the country (top figure) and at the first administrative division level (bottom figure).
+The below figures show trends in nighttime lights across the country, and at the first administrative division level, and within regions by earthquake intensity.
 
 ```{figure} figures/daily_trends_adm0.png
 ---
 scale: 40%
 align: center
 ---
-Annual Trends in Nighttime Lights: Country Level
+Daily Trends in Nighttime Lights: Country Level
 ```
 
 ```{figure} figures/daily_trends_adm1.png
@@ -76,7 +76,23 @@ Annual Trends in Nighttime Lights: Country Level
 scale: 40%
 align: center
 ---
-Annual Trends in Nighttime Lights: ADM 1 Level
+Daily Trends in Nighttime Lights: ADM 1 Level
+```
+
+```{figure} figures/daily_trends_eq_indiv.png
+---
+scale: 40%
+align: center
+---
+Daily Trends in Nighttime Lights: Earthquake Intensity
+```
+
+```{figure} figures/daily_trends_eq_range.png
+---
+scale: 40%
+align: center
+---
+Daily Trends in Nighttime Lights: Earthquake Intensity
 ```
 
 ### Nighttime Lights: ADM2 and ADM3
