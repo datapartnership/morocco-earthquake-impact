@@ -8,6 +8,7 @@ The Data Lab would like to express our sincere gratutude and appreciation for th
 | [Robert Andrew Marty](mailto:rmarty@worldbank.org)         | Analyst - Cross border activity   monitoring and economic analysis using nighttime lights | DIME               |
 | [Benny Istanto](mailto:bistanto@worldbank.org)           | Climate Geographer, Agriculture Specialist                                                          | GOST               |
 | [Gabriel Stefanini Vicente](mailto:gvicente@worldbank.org) | Data Scientist                         | WB Data Lab, DECDG |
+| [Gaurav Bharadwaj](mailto:gbharadwaj1@worldbank.org) | Data Scientist                         | DECID |
 | [Sahiti Sarva](mailto:ssarva@worldbank.org)                | Data Scientist                                       | WB Data Lab, DECDG |
 
 
