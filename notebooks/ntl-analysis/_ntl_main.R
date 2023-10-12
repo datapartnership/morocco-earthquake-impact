@@ -45,10 +45,9 @@ if(F){
   source(file.path(git_ntl_clean_dir, "02_extract_to_polygons.R"))
   
   #### Analysis (figures)
-  source(file.path(git_ntl_analysis_dir, "map_ntl_annual_2022.R"))
+  source(file.path(git_ntl_analysis_dir, "adm_tables.R"))
   source(file.path(git_ntl_analysis_dir, "annual_trends.R"))
   source(file.path(git_ntl_analysis_dir, "daily_trends.R"))
-  #source(file.path(git_ntl_analysis_dir, "monthly_trends.R"))
+  source(file.path(git_ntl_analysis_dir, "map_ntl_annual.R"))
   source(file.path(git_ntl_analysis_dir, "percent_change_adm.R"))
-
 }
