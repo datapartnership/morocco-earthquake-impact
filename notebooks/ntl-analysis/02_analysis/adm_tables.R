@@ -83,8 +83,8 @@ for(roi_name in c("adm2", "adm3")){
   # Export ---------------------------------------------------------------------
   ntl_df <- ntl_df %>%
     dplyr::select(-"2022") %>%
-    dplyr::mutate(pc_14_23pre_eq  = (pre_2023 - `2014`) / `2014`,
-                  pc_14_23post_eq = (post_2023 - `2014`) / `2014`) %>%
+    dplyr::mutate(pc_14_23pre_eq  = (pre_2023 - `2014`) / `2014` * 100,
+                  pc_14_23post_eq = (post_2023 - `2014`) / `2014` * 100) %>%
     dplyr::rename(yr2014 = "2014",
                   yr2023_pre_eq = "pre_2023",
                   yr2023_post_eq = "post_2023")

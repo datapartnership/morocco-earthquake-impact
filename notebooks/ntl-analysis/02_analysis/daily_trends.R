@@ -62,6 +62,9 @@ ntl_range_df <- bind_rows(ntl_3to5_df,
                           ntl_4to6_df,
                           ntl_7to9_df)
 
+THRESH <- ntl_indiv_df$ntl_bm_mean[!is.na(ntl_indiv_df$ntl_bm_mean)] %>% quantile(0.98) %>% as.numeric()
+ntl_indiv_df$ntl_bm_mean[ntl_indiv_df$ntl_bm_mean >= THRESH] <- THRESH
+
 ntl_indiv_df %>%
   mutate(mi = paste0("MI = ", mi)) %>%
   ggplot() +
@@ -73,7 +76,8 @@ ntl_indiv_df %>%
   labs(x = NULL,
        y = "Nighttime Lights",
        title = "Daily Nighttime Lights: by Earthquake Intensity",
-       subtitle = "Marrakech excluded from analysis") +
+       subtitle = "Marrakech excluded from analysis",
+       caption = "Values winsorized at the 98% level") +
   theme_classic2() +
   facet_wrap(~mi) +
   theme(strip.background = element_blank(),
@@ -84,6 +88,8 @@ ggsave(filename = file.path(figures_dir, "daily_trends_eq_indiv.png"),
        height = 3, width = 5.5)
 
 
+THRESH <- ntl_range_df$ntl_bm_mean[!is.na(ntl_range_df$ntl_bm_mean)] %>% quantile(0.98) %>% as.numeric()
+ntl_range_df$ntl_bm_mean[ntl_range_df$ntl_bm_mean >= THRESH] <- THRESH
 
 ntl_range_df %>%
   ggplot() +
@@ -95,7 +101,8 @@ ntl_range_df %>%
   labs(x = NULL,
        y = "Nighttime Lights",
        title = "Daily Nighttime Lights: by Earthquake Intensity",
-       subtitle = "Marrakech excluded from analysis") +
+       subtitle = "Marrakech excluded from analysis",
+       caption = "Values winsorized at the 98% level") +
   theme_classic2() +
   facet_wrap(~mi) +
   theme(strip.background = element_blank(),
