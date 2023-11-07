@@ -51,15 +51,6 @@ for(roi_name in c("adm1", "adm2", "adm3", "adm4")){
   roi_sf <- roi_sf %>%
     left_join(ntl_pc_df, by = "adm_id")
   
-  # roi_sf$pc19[roi_sf$pc19 > 0] <- NA
-  # roi_sf$pc19[is.na(roi_sf$pc19)] <- 0
-  # 
-  # roi_sf$pc20[roi_sf$pc20 > 0] <- NA
-  # roi_sf$pc20[is.na(roi_sf$pc20)] <- 0
-  # 
-  # roi_sf$pc21[roi_sf$pc21 > 0] <- NA
-  # roi_sf$pc21[is.na(roi_sf$pc21)] <- 0
-  
   roi_sf$pc19[roi_sf$pc19 >= 200] <- 200
   roi_sf$pc20[roi_sf$pc20 >= 200] <- 200
   roi_sf$pc21[roi_sf$pc21 >= 200] <- 200

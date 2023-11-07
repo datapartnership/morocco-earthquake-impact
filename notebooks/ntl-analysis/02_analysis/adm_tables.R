@@ -1,7 +1,7 @@
 # Tables for ADM2 and ADM3
 
 #### Load data
-roi_name <- "adm2"
+roi_name <- "adm3"
 for(roi_name in c("adm2", "adm3")){
   
   ntl_annual_df <- readRDS(file.path(ntl_dir, "aggregated-to-polygons", roi_name, 
@@ -13,6 +13,20 @@ for(roi_name in c("adm2", "adm3")){
   eq_df <- read_csv(file.path(data_dir, "earthquake_intensity", 
                               "intensity_mi_by_admin", 
                               paste0(roi_name, ".csv")))
+  
+  #### National Average
+  all_2014 <- ntl_annual_df %>%
+    dplyr::filter(year %in% 2014) %>%
+    pull(ntl_bm_mean) %>%
+    mean()
+  
+  all_post_eq <- ntl_daily_df %>%
+    dplyr::filter(date >= ymd("2023-09-09")) %>%
+    pull(ntl_bm_mean) %>%
+    mean(na.rm = T)
+  
+  all_2014
+  all_post_eq
   
   #### Prep name
   if(roi_name == "adm2"){
@@ -78,13 +92,12 @@ for(roi_name in c("adm2", "adm3")){
   }
   
   ntl_df$eq_mi[ntl_df$eq_mi == -Inf] <- NA
-  #ntl_df$eq_mi[is.na(ntl_df$eq_mi)] <- "< 2.6"
-  
+
   # Export ---------------------------------------------------------------------
   ntl_df <- ntl_df %>%
     dplyr::select(-"2022") %>%
-    dplyr::mutate(pc_14_23pre_eq  = (pre_2023 - `2014`) / `2014`,
-                  pc_14_23post_eq = (post_2023 - `2014`) / `2014`) %>%
+    dplyr::mutate(pc_14_23pre_eq  = (pre_2023 - `2014`) / `2014` * 100,
+                  pc_14_23post_eq = (post_2023 - `2014`) / `2014` * 100) %>%
     dplyr::rename(yr2014 = "2014",
                   yr2023_pre_eq = "pre_2023",
                   yr2023_post_eq = "post_2023")
