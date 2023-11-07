@@ -101,6 +101,9 @@ The below tables show average nighttime lights at ADM2 and ADM3 levels for 2014,
 
 The below tables show the 30 administrative zones with the largest earthquake intensities. The csv files [here](https://github.com/datapartnership/morocco-earthquake-impact/tree/main/notebooks/ntl-analysis/tables/ntl_adm2_adm3) provide data for all administrative zones.
 
+Across all of Morocco, the average nighttime lights in 2014 was 27.80; after the earthquake, average nighttime lights was 40.73---a 46% increase.
+
+
 ```{figure} figures/eq_table_adm2.png
 ---
 scale: 40%
@@ -115,6 +118,24 @@ scale: 40%
 align: center
 ---
 Annual Nighttime Lights: ADM 3 Level
+```
+
+The below tables show the percent change in nighttime lights relative to the week before the earthquake.
+
+```{figure} figures/eq_table_weeks_adm2.png
+---
+scale: 40%
+align: center
+---
+Percent change in nighttime lights relative to week before earthquake: ADM 2 Level
+```
+
+```{figure} figures/eq_table_weeks_adm3.png
+---
+scale: 40%
+align: center
+---
+Percent change in nighttime lights relative to week before earthquake: ADM 3 Level
 ```
 
 ### Change in Nighttime Lights
@@ -154,4 +175,11 @@ align: center
 ---
 Percent Change in Nighttime Lights: ADM 4
 ```
+
+### Proportion of lights in earthquake impacted areas
+
+* The sum of nighttime lights in earthquake impacts areas (ie, areas where the intensity is rated 7 or above) is: 37914.54
+* The sum of nighttime lights in all of Morocco is: 10999127
+* Consequently, the proportion of nighttime lights in earthquake impacted areas is: (37914 / 10999127) = 0.00344 (or 0.344%).
+
 

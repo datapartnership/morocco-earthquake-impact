@@ -28,7 +28,7 @@ bm_raster(roi_sf = roi_sf,
 
 bm_raster(roi_sf = roi_sf,
           product_id = "VNP46A2",
-          date = seq.Date(from = ymd("2023-08-01"), to = Sys.Date(), by = 1) %>% rev(),
+          date = seq.Date(from = ymd("2023-07-01"), to = Sys.Date(), by = 1) %>% rev(),
           bearer = bearer,
           quality_flag_rm = c(255,2),
           output_location_type = "file",
