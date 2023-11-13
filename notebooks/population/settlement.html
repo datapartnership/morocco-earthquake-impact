@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Building Footprint and Settlement Map</title>
+    <title>Damage to Financial Services and Points of Tourism</title>
   
   
   
@@ -70,7 +70,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="prev" title="Meta Network Coverage Maps" href="../network-connectivity/meta-network-connectivity.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-    <meta name="docbuild:last-update" content="Nov 07, 2023"/>
+    <meta name="docbuild:last-update" content="Nov 13, 2023"/>
   </head>
   
   
@@ -176,7 +176,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../earthquake-intensity/earthquake_intensity.html">Earthquake Intensity Map</a></li>
 <li class="toctree-l1"><a class="reference internal" href="affected-population.html">Demographics of Affected Population in Morocco</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../network-connectivity/meta-network-connectivity.html">Meta Network Coverage Maps</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Building Footprint and Settlement Map</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Damage to Financial Services and Points of Tourism</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../business-activity-trends/README.html">Business Activity Trends</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../business-activity-trends/01-business-activity-trends.html">Analysing business activity trends in Morocco</a></li>
 </ul>
@@ -402,7 +402,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Building Footprint and Settlement Map</h1>
+    <h1>Damage to Financial Services and Points of Tourism</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -412,11 +412,8 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#methodology">Methodology</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limitations">Limitations</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#percentage-of-tourist-locations-damaged-in-each-admnin-4-which-ad-7-mmi-scale-earthquake-impact">Percentage of tourist locations damaged in each admnin 4 which ad &gt;7 mmi scale earthquake impact</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assumptions-limitations">Assumptions &amp; Limitations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#findings">Findings</a></li>
 </ul>
             </nav>
         </div>
@@ -428,17 +425,35 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="building-footprint-and-settlement-map">
-<h1>Building Footprint and Settlement Map<a class="headerlink" href="#building-footprint-and-settlement-map" title="Permalink to this heading">#</a></h1>
-<p>Building footprint and settlement layers were taken from two sources - Openly available [Microsoft Building Footprints] and <a class="reference external" href="https://storage.googleapis.com/atlasai-public-data/index.html#Morocco_Earthquake_2023/">Atlas AI’s settlement layer</a>. Points of Interest data were obtained from <a class="reference external" href="https://data.humdata.org/dataset/hotosm_mar_points_of_interest?">OSM</a> and Earthquake Intensity files were taken from <a class="reference external" href="https://www.usgs.gov/">USGS</a>.</p>
-<section id="methodology">
-<h2>Methodology<a class="headerlink" href="#methodology" title="Permalink to this heading">#</a></h2>
-<p>The documentation of data collection and methdology for Atlas Ai can be found <a class="reference external" href="https://turkeyeq2023.atlasai.co/">here</a>. Te datasets are also available on the project <a class="reference external" href="https://worldbankgroup.sharepoint.com.mcas.ms/teams/DevelopmentDataPartnershipCommunity-WBGroup/Shared%20Documents/Forms/AllItems.aspx?csf=1&amp;web=1&amp;e=Yvwh8r&amp;cid=fccdf23e%2D94d5%2D48bf%2Db75d%2D0af291138bde&amp;FolderCTID=0x012000CFAB9FF0F938A64EBB297E7E16BDFCFD&amp;id=%2Fteams%2FDevelopmentDataPartnershipCommunity%2DWBGroup%2FShared%20Documents%2FProjects%2FData%20Lab%2FMorocco%20Economic%20Monitor%20and%20Earthquake%20Impact%2FData&amp;viewid=80cdadb3%2D8bb3%2D47ae%2D8b18%2Dc1dd89c373c5">SharePoint</a>.</p>
-<p>The datasets were juxstaposed for the admin regions that were most impacted by the earthquake. The resulting map is interactive with highly granular building footprint data.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="damage-to-financial-services-and-points-of-tourism">
+<h1>Damage to Financial Services and Points of Tourism<a class="headerlink" href="#damage-to-financial-services-and-points-of-tourism" title="Permalink to this heading">#</a></h1>
+<p>Points of Interest data were obtained from <a class="reference external" href="https://data.humdata.org/dataset/hotosm_mar_points_of_interest?">OSM</a> and Earthquake Intensity files were taken from <a class="reference external" href="https://www.usgs.gov/">USGS</a>. These data were juxtaposed to identify the buildings that would have seen the most amount of damage. Only the regions with earthquake intesnity on the mmi scale &gt;7 are considered within this analysis.</p>
+<section id="assumptions-limitations">
+<h2>Assumptions &amp; Limitations<a class="headerlink" href="#assumptions-limitations" title="Permalink to this heading">#</a></h2>
+<p>Data from OpenStreetMaps is crowdsourced and is not frequently updated. Therefore, the points identified may be wrongly counted in some locations. The assumption made is that any area which withstood earthquke intensity greater than 7 on the mmi scale would have taken damage.</p>
 </section>
-<section id="limitations">
-<h2>Limitations<a class="headerlink" href="#limitations" title="Permalink to this heading">#</a></h2>
-<p>The building footprints are obtained from satellite imagery which is obstructed by cloud cover. Given Morocco is a dessert area, the results are somewhere near 80% accurate. Data from OpenStreetMaps is crowdsourced.</p>
+<section id="findings">
+<h2>Findings<a class="headerlink" href="#findings" title="Permalink to this heading">#</a></h2>
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">percent_financial_services_in_affected_region</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="mi">100</span><span class="o">*</span><span class="nb">len</span><span class="p">(</span><span class="n">affected_regions</span><span class="o">.</span><span class="n">sjoin</span><span class="p">(</span><span class="n">financial_services</span><span class="p">)[</span><span class="s1">&#39;osm_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">())</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">financial_services</span><span class="p">[</span><span class="s1">&#39;osm_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()),</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">number_financial_services_in_affected_region</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">affected_regions</span><span class="o">.</span><span class="n">sjoin</span><span class="p">(</span><span class="n">financial_services</span><span class="p">)[</span><span class="s1">&#39;osm_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">percent_financial_services_in_affected_region</span><span class="si">}</span><span class="s1">% (i.e., </span><span class="si">{</span><span class="n">number_financial_services_in_affected_region</span><span class="si">}</span><span class="s1">) of financial services across the country are in the regions affected by the earthquake. These services include </span><span class="si">{</span><span class="n">financial_services_list</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.45% (i.e., 17) of financial services across the country are in the regions affected by the earthquake. These services include [&#39;bank&#39;, &#39;post_office&#39;, &#39;bureau_de_change&#39;, &#39;atm&#39;, &#39;money_transfer&#39;]
+</pre></div>
+</div>
+</div>
+</div>
 <div class="cell tag_hide-input docutils container">
 <details class="hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -447,54 +462,41 @@ document.write(`
 </summary>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
-<span class="n">affected_regions</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="s1">&#39;PARAMVALUE&#39;</span><span class="p">,</span> <span class="n">legend</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">)</span>
+<span class="kn">import</span> <span class="nn">matplotlib</span>
 
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Regions impacted by the earthquake&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">)</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">axs</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span> <span class="o">=</span> <span class="p">(</span><span class="mi">18</span><span class="p">,</span><span class="mi">12</span><span class="p">))</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">axs</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span>
 
-<span class="n">subtitle_text</span> <span class="o">=</span> <span class="s2">&quot;Source: USGS&quot;</span>
+<span class="n">matplotlib</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;font.family&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;Georgia&#39;</span>
 
-<span class="n">ax</span><span class="o">.</span><span class="n">spines</span><span class="p">[</span><span class="s1">&#39;top&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">set_visible</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">spines</span><span class="p">[</span><span class="s1">&#39;bottom&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">set_visible</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">spines</span><span class="p">[</span><span class="s1">&#39;right&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">set_visible</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">spines</span><span class="p">[</span><span class="s1">&#39;left&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">set_visible</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">affected_regions</span><span class="o">.</span><span class="n">boundary</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">linewidth</span> <span class="o">=</span> <span class="mf">0.5</span><span class="p">,</span> <span class="n">alpha</span> <span class="o">=</span> <span class="mf">0.5</span><span class="p">)</span>
+<span class="n">financial_services</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;#8F9491&#39;</span><span class="p">,</span> <span class="n">markersize</span> <span class="o">=</span> <span class="mi">3</span><span class="p">)</span>
+<span class="n">morocco_adm2</span><span class="o">.</span><span class="n">boundary</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;#f2f2f2&#39;</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">linewidth</span> <span class="o">=</span> <span class="mf">0.8</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Locations of financial services in Morocco&#39;</span><span class="p">,</span> <span class="n">pad</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">fontsize</span> <span class="o">=</span> <span class="mi">12</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">&#39;off&#39;</span><span class="p">)</span>
 
-<span class="n">ax</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">([])</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">([])</span>
+<span class="n">morocco_adm4</span><span class="o">.</span><span class="n">sjoin</span><span class="p">(</span><span class="n">affected_regions</span><span class="p">)</span><span class="o">.</span><span class="n">boundary</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;#f2f2f2&#39;</span><span class="p">)</span>
+<span class="n">affected_regions</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">column</span> <span class="o">=</span> <span class="s1">&#39;PARAMVALUE&#39;</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">cmap</span> <span class="o">=</span> <span class="s1">&#39;Reds&#39;</span><span class="p">,</span> <span class="n">alpha</span> <span class="o">=</span> <span class="mf">0.5</span><span class="p">)</span>
+<span class="n">financial_services</span><span class="p">[</span><span class="n">financial_services</span><span class="p">[</span><span class="s1">&#39;osm_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">affected_financial_services</span><span class="p">)]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;#8F9491&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Locations of financial services in earthquake impacted regions of Morocco (in admin 4 regions)&#39;</span><span class="p">,</span> <span class="n">pad</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">fontsize</span> <span class="o">=</span> <span class="mi">12</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">&#39;off&#39;</span><span class="p">)</span>
 
-<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="o">-</span><span class="mf">0.35</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.05</span><span class="p">,</span> <span class="n">subtitle_text</span><span class="p">,</span> <span class="n">transform</span><span class="o">=</span><span class="n">ax</span><span class="o">.</span><span class="n">transAxes</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">)</span>
+<span class="n">financial_services_adm2</span> <span class="o">=</span> <span class="n">morocco_adm2</span><span class="o">.</span><span class="n">sjoin</span><span class="p">(</span><span class="n">financial_services</span><span class="p">)</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;NAME_2&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">count</span><span class="p">()[[</span><span class="s1">&#39;osm_id&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+<span class="n">morocco_adm2</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">financial_services_adm2</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">column</span> <span class="o">=</span> <span class="s1">&#39;osm_id&#39;</span><span class="p">,</span> <span class="n">legend</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>  <span class="n">ax</span> <span class="o">=</span> <span class="n">ax</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">cmap</span> <span class="o">=</span> <span class="s1">&#39;Blues&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Distribution of financial services in admin 2 regions of Morocco&#39;</span><span class="p">,</span> <span class="n">pad</span> <span class="o">=</span> <span class="mi">50</span><span class="p">,</span> <span class="n">fontsize</span> <span class="o">=</span> <span class="mi">12</span><span class="p">)</span>
+<span class="c1">#ax[2].legend(loc = &#39;center left&#39;, bbox_to_anchor=(1,0.5))</span>
+
+<span class="n">ax</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">&#39;off&#39;</span><span class="p">)</span>
+
+<span class="n">affected_population_adm4</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">column</span> <span class="o">=</span> <span class="s1">&#39;population_without_children&#39;</span><span class="p">,</span> <span class="n">legend</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="n">cmap</span> <span class="o">=</span> <span class="s1">&#39;Greens&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Population in affected admin 4 regions&#39;</span><span class="p">,</span> <span class="n">pad</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">fontsize</span> <span class="o">=</span> <span class="mi">12</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">&#39;off&#39;</span><span class="p">);</span>
 </pre></div>
 </div>
 </div>
 </details>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(-0.35, -0.05, &#39;Source: USGS&#39;)
-</pre></div>
-</div>
-<img alt="../../_images/de6507722a90dc980e1aca77ded5afecd8d74ebb45c2c216b8f7369c2be280c5.png" src="../../_images/de6507722a90dc980e1aca77ded5afecd8d74ebb45c2c216b8f7369c2be280c5.png" />
-</div>
-</div>
-<section id="percentage-of-tourist-locations-damaged-in-each-admnin-4-which-ad-7-mmi-scale-earthquake-impact">
-<h3>Percentage of tourist locations damaged in each admnin 4 which ad &gt;7 mmi scale earthquake impact<a class="headerlink" href="#percentage-of-tourist-locations-damaged-in-each-admnin-4-which-ad-7-mmi-scale-earthquake-impact" title="Permalink to this heading">#</a></h3>
-<div class="cell tag_hide-input docutils container">
-<details class="hide above-input">
-<summary aria-label="Toggle hidden content">
-<span class="collapsed">Show code cell source</span>
-<span class="expanded">Hide code cell source</span>
-</summary>
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">percentage_tourist_damages</span>
-</pre></div>
-</div>
-</div>
-</details>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;Al Haouz&#39;: {&#39;No&#39;: 71.30801687763713, &#39;Yes&#39;: 28.69198312236287},
- &#39;Chichaoua&#39;: {&#39;No&#39;: 80.0, &#39;Yes&#39;: 20.0},
- &#39;Taroudannt&#39;: {&#39;No&#39;: 96.42857142857143, &#39;Yes&#39;: 3.5714285714285716},
- &#39;Marrakech&#39;: {&#39;No&#39;: 99.88331388564761, &#39;Yes&#39;: 0.11668611435239207}}
-</pre></div>
-</div>
+<img alt="../../_images/fe5493cdafa4b4256cbb609bfeabcb98ef4c3d40838dae624d5d55c82d661d33.png" src="../../_images/fe5493cdafa4b4256cbb609bfeabcb98ef4c3d40838dae624d5d55c82d661d33.png" />
 </div>
 </div>
 <div class="cell tag_hide-input docutils container">
@@ -504,14 +506,95 @@ document.write(`
 <span class="expanded">Hide code cell source</span>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">percentage_population</span><span class="o">=</span><span class="nb">round</span><span class="p">(</span><span class="mi">100</span><span class="o">*</span><span class="n">financial_services</span><span class="p">[</span><span class="s1">&#39;population_without_children&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">/</span><span class="n">total_population_affected_region</span><span class="p">[</span><span class="s1">&#39;population_wihtou_children&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">percentage_population</span><span class="si">}</span><span class="s1">% of people in the affected regions lost access to financial services after the earthquake. These include </span><span class="si">{</span><span class="n">financial_service_types</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">financial_services</span><span class="p">[</span><span class="s1">&#39;affected&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">financial_services</span><span class="p">[</span><span class="s1">&#39;osm_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span><span class="n">get_affected</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">affected_financial_services</span><span class="p">))</span>
+<span class="n">financial_services_adm4</span> <span class="o">=</span> <span class="n">morocco_adm4</span><span class="o">.</span><span class="n">sjoin</span><span class="p">(</span><span class="n">financial_services</span><span class="p">)</span>
+<span class="n">financial_services_adm2</span> <span class="o">=</span> <span class="n">morocco_adm2</span><span class="o">.</span><span class="n">sjoin</span><span class="p">(</span><span class="n">financial_services</span><span class="p">)</span>
+
+<span class="n">financial_services_adm2</span> <span class="o">=</span> <span class="n">financial_services_adm2</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;NAME_1&#39;</span><span class="p">,</span> <span class="s1">&#39;NAME_2&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">agg</span><span class="p">({</span><span class="s1">&#39;osm_id&#39;</span><span class="p">:</span><span class="s1">&#39;count&#39;</span><span class="p">,</span> <span class="s1">&#39;affected&#39;</span><span class="p">:</span><span class="s1">&#39;sum&#39;</span><span class="p">})</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+<span class="n">financial_services_adm2</span><span class="p">[</span><span class="s1">&#39;percent_affected&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">100</span><span class="o">*</span><span class="n">financial_services_adm2</span><span class="p">[</span><span class="s1">&#39;affected&#39;</span><span class="p">]</span><span class="o">/</span><span class="n">financial_services_adm2</span><span class="p">[</span><span class="s1">&#39;osm_id&#39;</span><span class="p">]</span>
+
+<span class="n">financial_services_adm2</span><span class="p">[</span><span class="n">financial_services_adm2</span><span class="p">[</span><span class="s1">&#39;percent_affected&#39;</span><span class="p">]</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
 </details>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>40% of people in the affected regions lost access to financial services after the earthquake. These include [&#39;bank&#39; &#39;post_office&#39; &#39;bureau_de_change&#39; &#39;atm&#39; &#39;money_transfer&#39;]
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>NAME_1</th>
+      <th>NAME_2</th>
+      <th>osm_id</th>
+      <th>affected</th>
+      <th>percent_affected</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>18</th>
+      <td>Marrakech - Tensift - Al Haouz</td>
+      <td>Al Haouz</td>
+      <td>21</td>
+      <td>14</td>
+      <td>66.666667</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>Marrakech - Tensift - Al Haouz</td>
+      <td>Chichaoua</td>
+      <td>7</td>
+      <td>2</td>
+      <td>28.571429</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>Marrakech - Tensift - Al Haouz</td>
+      <td>Marrakech</td>
+      <td>196</td>
+      <td>1</td>
+      <td>0.510204</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">percent_tourist_attractions_in_affected_region</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="mi">100</span><span class="o">*</span><span class="nb">len</span><span class="p">(</span><span class="n">affected_regions</span><span class="o">.</span><span class="n">sjoin</span><span class="p">(</span><span class="n">tourist_attractions</span><span class="p">)[</span><span class="s1">&#39;osm_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">())</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">tourist_attractions</span><span class="p">[</span><span class="s1">&#39;osm_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()),</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">number_tourist_attractions_in_affected_region</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">affected_regions</span><span class="o">.</span><span class="n">sjoin</span><span class="p">(</span><span class="n">tourist_attractions</span><span class="p">)[</span><span class="s1">&#39;osm_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">percent_tourist_attractions_in_affected_region</span><span class="si">}</span><span class="s1">% (i.e., </span><span class="si">{</span><span class="n">number_tourist_attractions_in_affected_region</span><span class="si">}</span><span class="s1">) of tourist attractions across the country are in the regions affected by the earthquake. These services include </span><span class="si">{</span><span class="n">tousit_attraction_list</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1.33% (i.e., 74) of tourist attractions across the country are in the regions affected by the earthquake. These services include [&#39;viewpoint&#39; &#39;attraction&#39; &#39;camp_site&#39; &#39;guest_house&#39; &#39;information&#39; &#39;hotel&#39;
+ &#39;artwork&#39; &#39;caravan_site&#39; &#39;hostel&#39; &#39;yes&#39; &#39;museum&#39; &#39;apartment&#39; &#39;motel&#39;
+ &#39;alpine_hut&#39; &#39;chalet&#39; &#39;camp_pitch&#39; &#39;picnic_site&#39; &#39;theme_park&#39;
+ &#39;wilderness_hut&#39; &#39;gallery&#39; &#39;zoo&#39; &#39;hotel;camping&#39; &#39;camp_site;hotel&#39;
+ &#39;hotel;camp_site&#39; &#39;monument&#39; &#39;lean_to&#39; &#39;guest_house;hotel;camp_site&#39;
+ &#39;wiewpoint&#39; &#39;cascade&#39; &#39;guest_house;hotel&#39; &#39;water_point&#39; &#39;spa_resort&#39;
+ &#39;guest_house;camp_site&#39;]
 </pre></div>
 </div>
 </div>
@@ -523,35 +606,41 @@ document.write(`
 <span class="expanded">Hide code cell source</span>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
-<span class="n">affected_regions</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;Reds&#39;</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="s1">&#39;PARAMVALUE&#39;</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">)</span>
-<span class="n">financial_services</span><span class="o">.</span><span class="n">to_crs</span><span class="p">(</span><span class="n">epsg</span><span class="o">=</span><span class="mi">4326</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="s1">&#39;population_without_children&#39;</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;Blues&#39;</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">legend</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">matplotlib</span>
 
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Total population within 5km radius of financial services&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">)</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">axs</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span> <span class="n">figsize</span> <span class="o">=</span> <span class="p">(</span><span class="mi">24</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">axs</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span>
 
-<span class="n">ax</span><span class="o">.</span><span class="n">spines</span><span class="p">[</span><span class="s1">&#39;top&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">set_visible</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">spines</span><span class="p">[</span><span class="s1">&#39;bottom&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">set_visible</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">spines</span><span class="p">[</span><span class="s1">&#39;right&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">set_visible</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">spines</span><span class="p">[</span><span class="s1">&#39;left&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">set_visible</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">matplotlib</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;font.family&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;Georgia&#39;</span>
 
-<span class="n">ax</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">([])</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">([])</span>
+<span class="n">affected_regions</span><span class="o">.</span><span class="n">boundary</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">linewidth</span> <span class="o">=</span> <span class="mf">0.5</span><span class="p">,</span> <span class="n">alpha</span> <span class="o">=</span> <span class="mf">0.5</span><span class="p">)</span>
+<span class="n">tourist_attractions</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;#BCA3AC&#39;</span><span class="p">,</span> <span class="n">markersize</span> <span class="o">=</span> <span class="mi">3</span><span class="p">)</span>
+<span class="n">morocco_adm2</span><span class="o">.</span><span class="n">boundary</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;#f2f2f2&#39;</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">linewidth</span> <span class="o">=</span> <span class="mf">0.8</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Locations of tourist attractions in Morocco&#39;</span><span class="p">,</span> <span class="n">pad</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">fontsize</span> <span class="o">=</span> <span class="mi">12</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">&#39;off&#39;</span><span class="p">)</span>
 
-<span class="n">subtitle_text</span> <span class="o">=</span> <span class="s2">&quot;Source: Population estimates from Meta&#39;s HRSL and financial points from OSM&quot;</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="o">-</span><span class="mf">0.35</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.05</span><span class="p">,</span> <span class="n">subtitle_text</span><span class="p">,</span> <span class="n">transform</span><span class="o">=</span><span class="n">ax</span><span class="o">.</span><span class="n">transAxes</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">)</span>
+<span class="n">morocco_adm4</span><span class="o">.</span><span class="n">sjoin</span><span class="p">(</span><span class="n">affected_regions</span><span class="p">)</span><span class="o">.</span><span class="n">boundary</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;#f2f2f2&#39;</span><span class="p">)</span>
+<span class="n">affected_regions</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">column</span> <span class="o">=</span> <span class="s1">&#39;PARAMVALUE&#39;</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">cmap</span> <span class="o">=</span> <span class="s1">&#39;Reds&#39;</span><span class="p">,</span> <span class="n">alpha</span> <span class="o">=</span> <span class="mf">0.5</span><span class="p">)</span>
+<span class="n">tourist_attractions</span><span class="p">[</span><span class="n">tourist_attractions</span><span class="p">[</span><span class="s1">&#39;osm_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">affected_tourist_attractions</span><span class="p">)]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;#BCA3AC&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Locations of tourist attractions in earthquake impacted regions of Morocco (in admin 4 regions)&#39;</span><span class="p">,</span> <span class="n">pad</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">fontsize</span> <span class="o">=</span> <span class="mi">12</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">&#39;off&#39;</span><span class="p">)</span>
+
+<span class="n">affected_regions</span><span class="o">.</span><span class="n">boundary</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">linewidth</span> <span class="o">=</span> <span class="mf">0.5</span><span class="p">,</span> <span class="n">alpha</span> <span class="o">=</span> <span class="mf">0.5</span><span class="p">)</span>
+<span class="n">tourist_attractions_adm2</span> <span class="o">=</span> <span class="n">morocco_adm2</span><span class="o">.</span><span class="n">sjoin</span><span class="p">(</span><span class="n">tourist_attractions</span><span class="p">)</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;NAME_2&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">count</span><span class="p">()[[</span><span class="s1">&#39;osm_id&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+<span class="n">morocco_adm2</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">tourist_attractions_adm2</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">column</span> <span class="o">=</span> <span class="s1">&#39;osm_id&#39;</span><span class="p">,</span> <span class="n">legend</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>  <span class="n">ax</span> <span class="o">=</span> <span class="n">ax</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">cmap</span> <span class="o">=</span> <span class="s1">&#39;Blues&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Distribution of tourist attractions in admin 2 regions of Morocco&#39;</span><span class="p">,</span> <span class="n">pad</span> <span class="o">=</span> <span class="mi">50</span><span class="p">,</span> <span class="n">fontsize</span> <span class="o">=</span> <span class="mi">12</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">&#39;off&#39;</span><span class="p">);</span>
 </pre></div>
 </div>
 </div>
 </details>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(-0.35, -0.05, &quot;Source: Population estimates from Meta&#39;s HRSL and financial points from OSM&quot;)
-</pre></div>
-</div>
-<img alt="../../_images/a787c59650181716d6e109ad80c25b85cdedbfc881fff785419ed1f06bdd9ba9.png" src="../../_images/a787c59650181716d6e109ad80c25b85cdedbfc881fff785419ed1f06bdd9ba9.png" />
+<img alt="../../_images/860bf03607fbe2a47cc158bc81ef87df7103a1c71c8f8ce01b60188109b6ac19.png" src="../../_images/860bf03607fbe2a47cc158bc81ef87df7103a1c71c8f8ce01b60188109b6ac19.png" />
 </div>
 </div>
 <iframe width="100%" height="500px" src="https://studio.foursquare.com/public/c5888cbb-e1e8-4844-b80f-178cda333a17/embed" frameborder="0" allowfullscreen></iframe></section>
-</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -617,11 +706,8 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#methodology">Methodology</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limitations">Limitations</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#percentage-of-tourist-locations-damaged-in-each-admnin-4-which-ad-7-mmi-scale-earthquake-impact">Percentage of tourist locations damaged in each admnin 4 which ad &gt;7 mmi scale earthquake impact</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assumptions-limitations">Assumptions &amp; Limitations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#findings">Findings</a></li>
 </ul>
   </nav></div>
 
@@ -647,7 +733,7 @@ By World Bank
   
   <div class="footer-item">
     <p class="last-updated">
-  Last updated on Nov 07, 2023.
+  Last updated on Nov 13, 2023.
   <br/>
 </p>
   </div>
