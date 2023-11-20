@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Analyzing Google Trends</title>
+    <title>Google Trends Analysis for Morocco’s Earthquake Response</title>
   
   
   
@@ -70,7 +70,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="prev" title="Analysing business activity trends in Morocco" href="../business-activity-trends/01-business-activity-trends.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-    <meta name="docbuild:last-update" content="Nov 13, 2023"/>
+    <meta name="docbuild:last-update" content="Nov 20, 2023"/>
   </head>
   
   
@@ -181,8 +181,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../business-activity-trends/01-business-activity-trends.html">Analysing business activity trends in Morocco</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Analyzing Google Trends</a></li>
-
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Google Trends Analysis for Morocco’s Earthquake Response</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../premise-survey/premise-survey.html">Premise Crowdsourced Surveys</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../ntl-analysis/README.html">Night Time Lights in Morocco</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../docs/drought-index.html">Drought</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -402,7 +401,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Analyzing Google Trends</h1>
+    <h1>Google Trends Analysis for Morocco’s Earthquake Response</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -412,14 +411,17 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Analyzing Google Trends</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lists-of-commonly-used-travel-search-terms-in-different-languages-catering-to-united-states-united-kingdom-france-germany-and-spain">Lists of commonly used travel search terms in different languages catering to United States, United Kingdom, France, Germany and Spain.</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comparing-the-trends-for-the-past-3-years-for-the-same-time-period-jan-sept">Comparing the trends for the past 3 years for the same time period (Jan - Sept)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analyzing-google-trends">Analyzing Google Trends</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lists-of-commonly-used-travel-search-terms-in-different-languages-catering-to-united-states-united-kingdom-france-germany-and-spain">Lists of commonly used travel search terms in different languages catering to United States, United Kingdom, France, Germany and Spain.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comparing-the-trends-for-the-past-3-years-for-the-same-time-period-jan-sept">Comparing the trends for the past 3 years for the same time period (Jan - Sept)</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#prediction">Prediction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prediction">Prediction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#needs-assessment">Needs Assessment</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#analyzing-data-at-subnational-regions-for-impacted-areas">Analyzing data at subnational regions for impacted areas</a></li>
 </ul>
-
+</li>
+</ul>
             </nav>
         </div>
     </div>
@@ -430,12 +432,14 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section id="analyzing-google-trends">
-<h1>Analyzing Google Trends<a class="headerlink" href="#analyzing-google-trends" title="Permalink to this heading">#</a></h1>
+  <section id="google-trends-analysis-for-morocco-s-earthquake-response">
+<h1>Google Trends Analysis for Morocco’s Earthquake Response<a class="headerlink" href="#google-trends-analysis-for-morocco-s-earthquake-response" title="Permalink to this heading">#</a></h1>
+<section id="analyzing-google-trends">
+<h2>Analyzing Google Trends<a class="headerlink" href="#analyzing-google-trends" title="Permalink to this heading">#</a></h2>
 <p>This analysis tries to answer the question if the recent earthquake in Morocco has or will affect the tourism industry. We make use of proprietary Google Trends data that gives us weekly data scaled to the highest result from 0 to 100 i.e. 100 representing the highest proportion for the terms queried within the selected region and time frame and zero the lowest.</p>
 <p>Since the team wanted to focus on 5 countries in specific, that make up for the highest number of visitors in Morocco, we created lists of commonly used terms that people tend to use to plan their holidays with Google Search. The kinds of searches that users perform can be a good proxy for the public’s interests, concerns or intentions, but these searches do not necessarily represent users’ opinions. Therefore we use statistical methods to come up with a probabilistic analysis of impact on Morocco’s tourism industry.</p>
 <section id="lists-of-commonly-used-travel-search-terms-in-different-languages-catering-to-united-states-united-kingdom-france-germany-and-spain">
-<h2>Lists of commonly used travel search terms in different languages catering to United States, United Kingdom, France, Germany and Spain.<a class="headerlink" href="#lists-of-commonly-used-travel-search-terms-in-different-languages-catering-to-united-states-united-kingdom-france-germany-and-spain" title="Permalink to this heading">#</a></h2>
+<h3>Lists of commonly used travel search terms in different languages catering to United States, United Kingdom, France, Germany and Spain.<a class="headerlink" href="#lists-of-commonly-used-travel-search-terms-in-different-languages-catering-to-united-states-united-kingdom-france-germany-and-spain" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">eng_terms</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;morocco flights&#39;</span><span class="p">,</span> <span class="s1">&#39;morocco hotels&#39;</span><span class="p">,</span> <span class="s1">&#39;marrakesh&#39;</span><span class="p">,</span> <span class="s1">&#39;marrakesh hotels&#39;</span><span class="p">,</span> <span class="s1">&#39;casablanca morocco&#39;</span><span class="p">,</span><span class="s1">&#39;casablanca hotels&#39;</span><span class="p">,</span> 
@@ -477,35 +481,12 @@ document.write(`
 </div>
 </div>
 <p>Looking at the latest available data for the selected countries (for the time period Jan-2023 - latest available date from Google Trends API)</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">plot_initial_trends</span><span class="p">(</span><span class="n">country</span><span class="p">):</span>
-    <span class="n">df</span> <span class="o">=</span> <span class="n">get_country_df</span><span class="p">(</span><span class="n">country</span><span class="p">,</span> <span class="s2">&quot;2023-01&quot;</span><span class="p">)</span>
-
-    <span class="n">df</span><span class="p">[</span><span class="s1">&#39;month&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">dt</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="s2">&quot;%Y-%m-</span><span class="si">%d</span><span class="s2">&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%b-</span><span class="si">%d</span><span class="s2">&quot;</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">]</span>
-
-    <span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;month&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;value&#39;</span><span class="p">,</span> <span class="n">markers</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">title</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">con_dict</span><span class="p">[</span><span class="n">country</span><span class="p">]</span><span class="si">}</span><span class="s2"> search trends for the year 2023&quot;</span><span class="p">)</span>
-    <span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
-<span class="k">for</span> <span class="n">country</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;US&#39;</span><span class="p">,</span> <span class="s1">&#39;GB&#39;</span><span class="p">,</span> <span class="s1">&#39;FR&#39;</span><span class="p">,</span> <span class="s1">&#39;ES&#39;</span><span class="p">,</span> <span class="s1">&#39;DE&#39;</span><span class="p">]:</span>
-    <span class="n">df_</span> <span class="o">=</span> <span class="n">get_country_df</span><span class="p">(</span><span class="n">country</span><span class="p">,</span> <span class="s2">&quot;2023-01&quot;</span><span class="p">)</span>
-
-    <span class="n">df_</span><span class="p">[</span><span class="s1">&#39;country&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">con_dict</span><span class="p">[</span><span class="n">country</span><span class="p">]</span>
-
-    <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df</span><span class="p">,</span> <span class="n">df_</span><span class="p">])</span>
-    <span class="c1">#plot_initial_trends(country)</span>
-<span class="n">df</span><span class="p">[</span><span class="s1">&#39;month&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">dt</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="s2">&quot;%Y-%m-</span><span class="si">%d</span><span class="s2">&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%b-</span><span class="si">%d</span><span class="s2">&quot;</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">]</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;month&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;value&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;country&#39;</span><span class="p">,</span> <span class="n">markers</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">title</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;Google Search Trends for the year 2023&quot;</span><span class="p">)</span>
 <span class="n">fig</span><span class="o">.</span><span class="n">update_yaxes</span><span class="p">(</span>
@@ -521,77 +502,90 @@ document.write(`
 </pre></div>
 </div>
 </div>
+</details>
 <div class="cell_output docutils container">
 </div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ax</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span><span class="o">.</span><span class="n">pivot</span><span class="p">(</span><span class="n">index</span> <span class="o">=</span> <span class="s1">&#39;date&#39;</span><span class="p">,</span> <span class="n">columns</span> <span class="o">=</span> <span class="s1">&#39;country&#39;</span><span class="p">,</span> <span class="n">values</span> <span class="o">=</span> <span class="s1">&#39;value&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">figsize</span> <span class="o">=</span> <span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Google Search Trends for the year 2023&quot;</span><span class="p">,</span> <span class="n">fontsize</span> <span class="o">=</span> <span class="mi">12</span><span class="p">);</span>
 </pre></div>
 </div>
 </div>
+</details>
 <div class="cell_output docutils container">
-<img alt="../../_images/98bf704b12d5e46cf7359c478a9ef8f3eb6d0e581bd2fd75c0774b859943fc99.png" src="../../_images/98bf704b12d5e46cf7359c478a9ef8f3eb6d0e581bd2fd75c0774b859943fc99.png" />
+<img alt="../../_images/385ee05e45ff08dafa27c0743a90a4853d75aea46ddd6528c0a87eb94386c0ca.png" src="../../_images/385ee05e45ff08dafa27c0743a90a4853d75aea46ddd6528c0a87eb94386c0ca.png" />
 </div>
 </div>
 </section>
 <section id="comparing-the-trends-for-the-past-3-years-for-the-same-time-period-jan-sept">
-<h2>Comparing the trends for the past 3 years for the same time period (Jan - Sept)<a class="headerlink" href="#comparing-the-trends-for-the-past-3-years-for-the-same-time-period-jan-sept" title="Permalink to this heading">#</a></h2>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">plot_charts</span><span class="p">(</span><span class="n">country</span><span class="p">):</span>
-    <span class="n">df_curr</span> <span class="o">=</span> <span class="n">get_country_df</span><span class="p">(</span><span class="n">country</span><span class="p">,</span> <span class="s2">&quot;2023-01&quot;</span><span class="p">)</span>
-    <span class="n">df_year1</span> <span class="o">=</span> <span class="n">get_country_df</span><span class="p">(</span><span class="n">country</span><span class="p">,</span> <span class="s2">&quot;2022-01&quot;</span><span class="p">,</span> <span class="s2">&quot;2022-09&quot;</span><span class="p">)</span>
-    <span class="n">df_year2</span> <span class="o">=</span> <span class="n">get_country_df</span><span class="p">(</span><span class="n">country</span><span class="p">,</span> <span class="s2">&quot;2021-01&quot;</span><span class="p">,</span> <span class="s2">&quot;2021-09&quot;</span><span class="p">)</span>
-
-    <span class="n">ax</span> <span class="o">=</span> <span class="n">df_curr</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">figsize</span> <span class="o">=</span> <span class="p">(</span><span class="mi">14</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
-    <span class="n">df_year1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">)</span>
-    <span class="n">df_year2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">)</span>
-    <span class="n">handles</span><span class="p">,</span> <span class="n">previous_labels</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">get_legend_handles_labels</span><span class="p">()</span>
-    <span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">handles</span><span class="o">=</span><span class="n">handles</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;2023 trends (Jan-Sept)&quot;</span><span class="p">,</span> <span class="s2">&quot;2022 trends (Jan-Sept)&quot;</span><span class="p">,</span> <span class="s2">&quot;2021 trends (Jan-Sept)&quot;</span><span class="p">])</span>
-    <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">con_dict</span><span class="p">[</span><span class="n">country</span><span class="p">]</span><span class="si">}</span><span class="s2"> Trends Analysis&quot;</span><span class="p">);</span>
-    <span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">100</span><span class="p">);</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
+<h3>Comparing the trends for the past 3 years for the same time period (Jan - Sept)<a class="headerlink" href="#comparing-the-trends-for-the-past-3-years-for-the-same-time-period-jan-sept" title="Permalink to this heading">#</a></h3>
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plot_charts</span><span class="p">(</span><span class="s2">&quot;US&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
+</details>
 <div class="cell_output docutils container">
 <img alt="../../_images/6ec86cefec5760c60cf6908bf0253feabdb3d1e67ac279dad00fad78957ca81b.png" src="../../_images/6ec86cefec5760c60cf6908bf0253feabdb3d1e67ac279dad00fad78957ca81b.png" />
 </div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plot_charts</span><span class="p">(</span><span class="s2">&quot;GB&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
+</details>
 <div class="cell_output docutils container">
 <img alt="../../_images/d9beeba7fb36aa863b1d24b84b7195418c4c8b094e65c55b933e29bec69102c8.png" src="../../_images/d9beeba7fb36aa863b1d24b84b7195418c4c8b094e65c55b933e29bec69102c8.png" />
 </div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plot_charts</span><span class="p">(</span><span class="s2">&quot;FR&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
+</details>
 <div class="cell_output docutils container">
 <img alt="../../_images/9cc3392816175b8d96f1cba1c41b2fe8b0296bd00cb131a1a4577f74c33e0445.png" src="../../_images/9cc3392816175b8d96f1cba1c41b2fe8b0296bd00cb131a1a4577f74c33e0445.png" />
 </div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plot_charts</span><span class="p">(</span><span class="s2">&quot;ES&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
+</details>
 <div class="cell_output docutils container">
 <img alt="../../_images/3982a521a48ef48e10a4b158860b8a378162ab85c8e61843e5dceff46ee51aa2.png" src="../../_images/3982a521a48ef48e10a4b158860b8a378162ab85c8e61843e5dceff46ee51aa2.png" />
 </div>
@@ -600,127 +594,418 @@ document.write(`
 </section>
 </section>
 <section id="prediction">
-<h1>Prediction<a class="headerlink" href="#prediction" title="Permalink to this heading">#</a></h1>
+<h2>Prediction<a class="headerlink" href="#prediction" title="Permalink to this heading">#</a></h2>
 <p>To predict if the tourism will be impacted using Google Trends data, we’ll collect the data points for set query terms from 2019 to latest available date (removing the time periods when the country was under COVID lockdown).</p>
 <p>Specific terms related to flight/hotel cancellation were used but Google Trends did not have enough data to show that. This prediction is solely based on yearly trends and seasonality.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">predict_trends</span><span class="p">(</span><span class="n">country</span><span class="p">):</span>
-    <span class="n">df1</span> <span class="o">=</span> <span class="n">get_country_df</span><span class="p">(</span><span class="n">country</span><span class="p">,</span> <span class="s2">&quot;2019-01&quot;</span><span class="p">,</span> <span class="s2">&quot;2020-03&quot;</span><span class="p">)</span>
-    <span class="n">df2</span> <span class="o">=</span> <span class="n">get_country_df</span><span class="p">(</span><span class="n">country</span><span class="p">,</span> <span class="s2">&quot;2021-10&quot;</span><span class="p">)</span>
-
-    <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df1</span><span class="p">,</span> <span class="n">df2</span><span class="p">])</span>
-
-    <span class="c1">## Removing effects due to seasonality from the time series</span>
-    
-    <span class="n">result_mul</span> <span class="o">=</span> <span class="n">seasonal_decompose</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">value</span><span class="p">,</span><span class="n">model</span><span class="o">=</span><span class="s1">&#39;multiplicative&#39;</span><span class="p">,</span> <span class="n">extrapolate_trend</span><span class="o">=</span><span class="s1">&#39;freq&#39;</span><span class="p">,</span> <span class="n">period</span> <span class="o">=</span> <span class="mi">12</span><span class="p">)</span>
-    <span class="n">deseason</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">value</span> <span class="o">-</span> <span class="n">result_mul</span><span class="o">.</span><span class="n">seasonal</span>
-
-    <span class="c1">##spilitting the data into train/test set</span>
-
-    <span class="n">Train</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">deseason</span><span class="p">[:</span><span class="o">-</span><span class="mi">60</span><span class="p">],</span> <span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;value&#39;</span><span class="p">])</span>
-    <span class="n">valid</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">deseason</span><span class="p">[</span><span class="o">-</span><span class="mi">60</span><span class="p">:],</span> <span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;value&#39;</span><span class="p">])</span>
-
-    <span class="c1">## Fitting the data to Holt&#39;s model</span>
-    <span class="n">y_hat_avg</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">valid</span><span class="p">)</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span> 
-    <span class="n">fit1</span> <span class="o">=</span> <span class="n">Holt</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">Train</span><span class="o">.</span><span class="n">value</span><span class="p">))</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">smoothing_level</span> <span class="o">=</span> <span class="mf">0.5</span><span class="p">)</span> <span class="c1">#smoothing_level = 0.3, smoothing_slope = 0.1</span>
-    <span class="n">y_hat_avg</span><span class="p">[</span><span class="s1">&#39;Holt_linear&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">fit1</span><span class="o">.</span><span class="n">forecast</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">valid</span><span class="p">))</span>
-
-    <span class="n">rms</span> <span class="o">=</span> <span class="n">sqrt</span><span class="p">(</span><span class="n">mean_squared_error</span><span class="p">(</span><span class="n">valid</span><span class="o">.</span><span class="n">value</span><span class="p">,</span> <span class="n">y_hat_avg</span><span class="o">.</span><span class="n">Holt_linear</span><span class="p">))</span> 
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;RMS error for </span><span class="si">{</span><span class="n">con_dict</span><span class="p">[</span><span class="n">country</span><span class="p">]</span><span class="si">}</span><span class="s2">&#39;s data is </span><span class="si">{</span><span class="n">rms</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-
-    <span class="n">y_hat_avg</span><span class="p">[</span><span class="s1">&#39;date_ordinal&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">y_hat_avg</span><span class="o">.</span><span class="n">index</span><span class="p">)</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">dt</span><span class="o">.</span><span class="n">toordinal</span><span class="p">)</span>
-    <span class="n">slope</span><span class="p">,</span> <span class="n">intercept</span><span class="p">,</span> <span class="n">r_value</span><span class="p">,</span> <span class="n">p_value</span><span class="p">,</span> <span class="n">std_err</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">linregress</span><span class="p">(</span><span class="n">y_hat_avg</span><span class="p">[</span><span class="s1">&#39;date_ordinal&#39;</span><span class="p">],</span> <span class="n">y_hat_avg</span><span class="p">[</span><span class="s1">&#39;Holt_linear&#39;</span><span class="p">])</span>
-
-    <span class="k">if</span> <span class="n">slope</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Upward trend: </span><span class="si">{</span><span class="n">slope</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-    <span class="k">elif</span> <span class="n">slope</span><span class="o">&lt;</span><span class="mi">0</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Downward trend: </span><span class="si">{</span><span class="n">slope</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;No trend&quot;</span><span class="p">)</span>
-
-
-    <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">Train</span><span class="p">[</span><span class="s1">&#39;value&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;training data&#39;</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">valid</span><span class="p">[</span><span class="s1">&#39;value&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;test data&#39;</span><span class="p">)</span> 
-    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">y_hat_avg</span><span class="p">[</span><span class="s1">&#39;Holt_linear&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;predicted data&#39;</span><span class="p">)</span> 
-    <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s1">&#39;best&#39;</span><span class="p">)</span> 
-    <span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">rotation</span> <span class="o">=</span> <span class="mi">90</span><span class="p">,</span> <span class="n">fontsize</span> <span class="o">=</span> <span class="mi">7</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">predict_trends</span><span class="p">(</span><span class="s2">&quot;US&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
+</details>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>RMS error for United States&#39;s data is 6.941
-Downward trend: -0.014384922109933173
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>RMS error for United States&#39;s data is 8.734
+Downward trend: -0.00612
 </pre></div>
 </div>
-<img alt="../../_images/77e15c58c86648286bfb28be9a906f6f35f70aaf7700119b91284275e69e6475.png" src="../../_images/77e15c58c86648286bfb28be9a906f6f35f70aaf7700119b91284275e69e6475.png" />
+<img alt="../../_images/1ff041d2cf24e472733e47f01e81fc013987a777c7f3fd7a496dc93617e07eb6.png" src="../../_images/1ff041d2cf24e472733e47f01e81fc013987a777c7f3fd7a496dc93617e07eb6.png" />
 </div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">predict_trends</span><span class="p">(</span><span class="s2">&quot;ES&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
+</details>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>RMS error for Spain&#39;s data is 7.596
-Upward trend: 0.0019244376058693243
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>RMS error for Spain&#39;s data is 9.767
+Upward trend: 0.00553
 </pre></div>
 </div>
-<img alt="../../_images/225c64734dc4c0c2f837ed93b11b13031324b30ed55de4f7d70ac099f1b0787c.png" src="../../_images/225c64734dc4c0c2f837ed93b11b13031324b30ed55de4f7d70ac099f1b0787c.png" />
+<img alt="../../_images/f4656aaa193ab64a3b69503e2dfb87d115e6551b3bfe52e35f1387c8ea5fe7c4.png" src="../../_images/f4656aaa193ab64a3b69503e2dfb87d115e6551b3bfe52e35f1387c8ea5fe7c4.png" />
 </div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">predict_trends</span><span class="p">(</span><span class="s2">&quot;FR&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
+</details>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>RMS error for France&#39;s data is 8.343
-Downward trend: -0.004697428513866839
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>RMS error for France&#39;s data is 7.433
+Downward trend: -0.01239
 </pre></div>
 </div>
-<img alt="../../_images/2fcb26a9d95337e4366468a0560f2f8d3fd29f06a8193ab298c73fbebe410ac8.png" src="../../_images/2fcb26a9d95337e4366468a0560f2f8d3fd29f06a8193ab298c73fbebe410ac8.png" />
+<img alt="../../_images/de08363e00d76bf12b1f0a41428f7127a4856f85f33fd933200afc7d8a190fe2.png" src="../../_images/de08363e00d76bf12b1f0a41428f7127a4856f85f33fd933200afc7d8a190fe2.png" />
 </div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">predict_trends</span><span class="p">(</span><span class="s2">&quot;DE&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
+</details>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>RMS error for Germany&#39;s data is 10.658
-Downward trend: -0.036836319921719665
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>RMS error for Germany&#39;s data is 7.908
+Downward trend: -0.01682
 </pre></div>
 </div>
-<img alt="../../_images/499bceb1ece9104a4f067813155ed346deca538644d0b76565d8367281663f18.png" src="../../_images/499bceb1ece9104a4f067813155ed346deca538644d0b76565d8367281663f18.png" />
+<img alt="../../_images/f8da257595e10bdb351e44e75ca859b560cf2a66b43e2d0be7b1e086fcabf1bd.png" src="../../_images/f8da257595e10bdb351e44e75ca859b560cf2a66b43e2d0be7b1e086fcabf1bd.png" />
 </div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">predict_trends</span><span class="p">(</span><span class="s2">&quot;GB&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
+</details>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>RMS error for United Kingdom&#39;s data is 5.945
-Downward trend: -0.007824603167199492
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>RMS error for United Kingdom&#39;s data is 6.376
+Downward trend: -0.01236
 </pre></div>
 </div>
-<img alt="../../_images/5cd0c6e22232d23683b273568e4b44855890446fce8da2d8a163d12f13a37c80.png" src="../../_images/5cd0c6e22232d23683b273568e4b44855890446fce8da2d8a163d12f13a37c80.png" />
+<img alt="../../_images/980bd406dd0bc4b0d10e076f89d8415ee1bb9a335f50bfd67d37534704c484cb.png" src="../../_images/980bd406dd0bc4b0d10e076f89d8415ee1bb9a335f50bfd67d37534704c484cb.png" />
 </div>
 </div>
+</section>
+<section id="needs-assessment">
+<h2>Needs Assessment<a class="headerlink" href="#needs-assessment" title="Permalink to this heading">#</a></h2>
+<p>This part of the analyses uses Google Trends data within Morocco to see if there was a trend in some of the key search terms categories. The search terms comprise of English, French and Arabic terms that could’ve been used by the local communities or the search and rescue operations staff. The analysis also takes a deeper dive at the admin regions most affected by the earthquake to see if there’s any considerable trend for the search terms.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">water_terms</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;water&#39;</span><span class="p">,</span> <span class="s1">&#39;drinking water&#39;</span><span class="p">,</span> <span class="s1">&#39;يشرب الماء&#39;</span><span class="p">,</span> <span class="s1">&#39;ماء&#39;</span><span class="p">,</span> <span class="s1">&#39;eau&#39;</span><span class="p">]</span>
+
+<span class="n">food_terms</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;grocery store&#39;</span><span class="p">,</span> <span class="s1">&#39;souk&#39;</span><span class="p">,</span> <span class="s1">&#39;خضروات&#39;</span><span class="p">,</span> <span class="s1">&#39;restaurant near me&#39;</span><span class="p">,</span> <span class="s1">&#39;store&#39;</span> <span class="p">]</span>
+
+<span class="n">ph_terms</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;toilette&#39;</span><span class="p">,</span> <span class="s1">&#39;الحمام&#39;</span><span class="p">,</span> <span class="s1">&#39;toilet&#39;</span><span class="p">]</span>
+
+<span class="n">hosp_terms</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;مستشفى&#39;</span><span class="p">,</span> <span class="s1">&#39;hôpital&#39;</span><span class="p">,</span> <span class="s1">&#39;clinique&#39;</span><span class="p">,</span> <span class="s1">&#39;عيادة&#39;</span><span class="p">,</span> <span class="s1">&#39;hospital&#39;</span><span class="p">,</span> <span class="s1">&#39;clinic&#39;</span><span class="p">,</span> <span class="s1">&#39;medical supply&#39;</span><span class="p">,</span> <span class="s1">&#39;medicines&#39;</span><span class="p">,</span> <span class="s1">&#39;الأدوية&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Analyzing the trends of search keywords for before and after the earthquake period for Morocco to see if there was any considerable changes in search for these key topics</p>
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Trends for before earthquake period of water terms&quot;</span><span class="p">)</span>
+<span class="n">get_needs_trends</span><span class="p">(</span><span class="n">beq_water</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Trends for after earthquake period of water terms&quot;</span><span class="p">)</span>
+<span class="n">get_needs_trends</span><span class="p">(</span><span class="n">aeq_water</span><span class="p">)</span>
+<span class="n">plot_needs_trends</span><span class="p">(</span><span class="n">beq_water</span><span class="p">,</span> <span class="n">aeq_water</span><span class="p">,</span> <span class="s1">&#39;Water&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Trends for before earthquake period of water terms
+Downward trend: -0.012590969756490955
+Trends for after earthquake period of water terms
+Upward trend: 0.3631590656284752
+</pre></div>
+</div>
+<img alt="../../_images/f12179358dbaffdcaa59332ea9189df50d24427ec70f3fa79635ff23ae686295.png" src="../../_images/f12179358dbaffdcaa59332ea9189df50d24427ec70f3fa79635ff23ae686295.png" />
+</div>
+</div>
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Trends for before earthquake period of food terms&quot;</span><span class="p">)</span>
+<span class="n">get_needs_trends</span><span class="p">(</span><span class="n">beq_food</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Trends for after earthquake period of food terms&quot;</span><span class="p">)</span>
+<span class="n">get_needs_trends</span><span class="p">(</span><span class="n">aeq_food</span><span class="p">)</span>
+<span class="n">plot_needs_trends</span><span class="p">(</span><span class="n">beq_food</span><span class="p">,</span> <span class="n">aeq_food</span><span class="p">,</span> <span class="s1">&#39;Food&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Trends for before earthquake period of food terms
+Upward trend: 0.033220014605524664
+Trends for after earthquake period of food terms
+Downward trend: -0.01962180200222564
+</pre></div>
+</div>
+<img alt="../../_images/2c1a50076a630fbf4ce7ba61b6db83472ff333196d912af72a07bf85e80377a9.png" src="../../_images/2c1a50076a630fbf4ce7ba61b6db83472ff333196d912af72a07bf85e80377a9.png" />
+</div>
+</div>
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Trends for before earthquake period of personal hygiene terms&quot;</span><span class="p">)</span>
+<span class="n">get_needs_trends</span><span class="p">(</span><span class="n">beq_ph</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Trends for after earthquake period of personal hygiene terms&quot;</span><span class="p">)</span>
+<span class="n">get_needs_trends</span><span class="p">(</span><span class="n">aeq_ph</span><span class="p">)</span>
+<span class="n">plot_needs_trends</span><span class="p">(</span><span class="n">beq_ph</span><span class="p">,</span> <span class="n">aeq_ph</span><span class="p">,</span> <span class="s1">&#39;Personal Hygiene&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Trends for before earthquake period of personal hygiene terms
+Upward trend: 0.007747643390160294
+Trends for after earthquake period of personal hygiene terms
+Upward trend: 0.05376344086021354
+</pre></div>
+</div>
+<img alt="../../_images/4ee8756947fb2fdfecb04c25da2bff1dcef4638d2dced366a4310bf5ac4edb02.png" src="../../_images/4ee8756947fb2fdfecb04c25da2bff1dcef4638d2dced366a4310bf5ac4edb02.png" />
+</div>
+</div>
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Trends for before earthquake period of hospital terms&quot;</span><span class="p">)</span>
+<span class="n">get_needs_trends</span><span class="p">(</span><span class="n">beq_hosp</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Trends for after earthquake period of hospital terms&quot;</span><span class="p">)</span>
+<span class="n">get_needs_trends</span><span class="p">(</span><span class="n">aeq_hosp</span><span class="p">)</span>
+<span class="n">plot_needs_trends</span><span class="p">(</span><span class="n">beq_hosp</span><span class="p">,</span> <span class="n">aeq_hosp</span><span class="p">,</span> <span class="s1">&#39;Hospital&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Trends for before earthquake period of hospital terms
+Downward trend: -0.06686084740024499
+Trends for after earthquake period of hospital terms
+Upward trend: 0.141811889754047
+</pre></div>
+</div>
+<img alt="../../_images/7faa9dcb3c6ff856970e1d118c722a648b34a27eb44c6770a74ab89f302eb6dd.png" src="../../_images/7faa9dcb3c6ff856970e1d118c722a648b34a27eb44c6770a74ab89f302eb6dd.png" />
+</div>
+</div>
+<section id="analyzing-data-at-subnational-regions-for-impacted-areas">
+<h3>Analyzing data at subnational regions for impacted areas<a class="headerlink" href="#analyzing-data-at-subnational-regions-for-impacted-areas" title="Permalink to this heading">#</a></h3>
+<p>Béni Mellal-Khénifra Region</p>
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#MA-09, MA-07, MA-05</span>
+<span class="c1">#adm2 = {&quot;Béni Mellal-Khénifra&quot; : &quot;MA-05&quot;, &quot;Marrakech-Safi&quot; : &quot;MA-07&quot;, &quot;Souss-Massa&quot; : &quot;MA-09&quot;}</span>
+
+<span class="n">needs_terms</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;water&quot;</span> <span class="p">:</span> <span class="n">water_terms</span><span class="p">,</span> <span class="s2">&quot;food&quot;</span> <span class="p">:</span> <span class="n">food_terms</span><span class="p">,</span> <span class="s2">&quot;personal hygiene&quot;</span> <span class="p">:</span> <span class="n">ph_terms</span><span class="p">,</span> <span class="s2">&quot;hospital&quot;</span> <span class="p">:</span> <span class="n">hosp_terms</span><span class="p">}</span>
+
+<span class="c1">#for adm in adm2.keys():</span>
+<span class="k">for</span> <span class="n">terms</span> <span class="ow">in</span> <span class="n">needs_terms</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+    <span class="n">bef</span> <span class="o">=</span> <span class="n">get_df_ht</span><span class="p">(</span><span class="n">needs_terms</span><span class="p">[</span><span class="n">terms</span><span class="p">],</span> <span class="s2">&quot;MA-05&quot;</span><span class="p">,</span> <span class="n">start_date</span><span class="o">=</span><span class="s1">&#39;2023-07&#39;</span><span class="p">,</span> <span class="n">end_date</span> <span class="o">=</span> <span class="s2">&quot;2023-08&quot;</span><span class="p">)</span>
+    <span class="n">aft</span> <span class="o">=</span> <span class="n">get_df_ht</span><span class="p">(</span><span class="n">needs_terms</span><span class="p">[</span><span class="n">terms</span><span class="p">],</span> <span class="s2">&quot;MA-05&quot;</span><span class="p">,</span> <span class="n">start_date</span><span class="o">=</span><span class="s1">&#39;2023-09&#39;</span><span class="p">,</span> <span class="n">end_date</span> <span class="o">=</span> <span class="s1">&#39;2023-09&#39;</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Trends for Béni Mellal-Khénifra before earthquake period of </span><span class="si">{</span><span class="n">terms</span><span class="si">}</span><span class="s2"> terms&quot;</span><span class="p">)</span>
+    <span class="n">get_needs_trends</span><span class="p">(</span><span class="n">bef</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Trends for Béni Mellal-Khénifra after earthquake period of </span><span class="si">{</span><span class="n">terms</span><span class="si">}</span><span class="s2"> terms&quot;</span><span class="p">)</span>
+    <span class="n">get_needs_trends</span><span class="p">(</span><span class="n">aft</span><span class="p">)</span>
+    <span class="n">plot_needs_trends</span><span class="p">(</span><span class="n">bef</span><span class="p">,</span> <span class="n">aft</span><span class="p">,</span> <span class="n">terms</span><span class="p">,</span> <span class="s1">&#39;Béni Mellal-Khénifra&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;============*****=================&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Trends for Béni Mellal-Khénifra before earthquake period of water terms
+Downward trend: -0.04543829165722356
+Trends for Béni Mellal-Khénifra after earthquake period of water terms
+Upward trend: 0.23439377085650698
+</pre></div>
+</div>
+<img alt="../../_images/59d3305fa716bc34e35dcbab98ba55f7cdd21b16399d39e902ddf0e643798d6d.png" src="../../_images/59d3305fa716bc34e35dcbab98ba55f7cdd21b16399d39e902ddf0e643798d6d.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>============*****=================
+Trends for Béni Mellal-Khénifra before earthquake period of food terms
+Upward trend: 0.04708015411346975
+Trends for Béni Mellal-Khénifra after earthquake period of food terms
+Upward trend: 0.09152391546162388
+</pre></div>
+</div>
+<img alt="../../_images/d5c1bb0ad5ef9fb0553a844980aa5ae21ef665d65c6a672350433cbe06b86e5f.png" src="../../_images/d5c1bb0ad5ef9fb0553a844980aa5ae21ef665d65c6a672350433cbe06b86e5f.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>============*****=================
+Trends for Béni Mellal-Khénifra before earthquake period of personal hygiene terms
+Downward trend: -0.019532791082235976
+Trends for Béni Mellal-Khénifra after earthquake period of personal hygiene terms
+Downward trend: -0.27779013718947004
+</pre></div>
+</div>
+<img alt="../../_images/636768ab9f2c2b8058ef1f644940049cbb63423fad28c0512783b7aadc97926b.png" src="../../_images/636768ab9f2c2b8058ef1f644940049cbb63423fad28c0512783b7aadc97926b.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>============*****=================
+Trends for Béni Mellal-Khénifra before earthquake period of hospital terms
+Upward trend: 0.019678286732755148
+Trends for Béni Mellal-Khénifra after earthquake period of hospital terms
+Downward trend: -0.05218143616363871
+</pre></div>
+</div>
+<img alt="../../_images/f08b79c85dc09b4bb169a8645ec68f31fdb57d6c38b469b61da704b958aafbb6.png" src="../../_images/f08b79c85dc09b4bb169a8645ec68f31fdb57d6c38b469b61da704b958aafbb6.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>============*****=================
+</pre></div>
+</div>
+</div>
+</div>
+<p>Marrakech-Safi Region</p>
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">terms</span> <span class="ow">in</span> <span class="n">needs_terms</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+    <span class="n">bef</span> <span class="o">=</span> <span class="n">get_df_ht</span><span class="p">(</span><span class="n">needs_terms</span><span class="p">[</span><span class="n">terms</span><span class="p">],</span> <span class="s2">&quot;MA-07&quot;</span><span class="p">,</span> <span class="n">start_date</span><span class="o">=</span><span class="s1">&#39;2023-07&#39;</span><span class="p">,</span> <span class="n">end_date</span> <span class="o">=</span> <span class="s2">&quot;2023-08&quot;</span><span class="p">)</span>
+    <span class="n">aft</span> <span class="o">=</span> <span class="n">get_df_ht</span><span class="p">(</span><span class="n">needs_terms</span><span class="p">[</span><span class="n">terms</span><span class="p">],</span> <span class="s2">&quot;MA-07&quot;</span><span class="p">,</span> <span class="n">start_date</span><span class="o">=</span><span class="s1">&#39;2023-09&#39;</span><span class="p">,</span> <span class="n">end_date</span> <span class="o">=</span> <span class="s1">&#39;2023-09&#39;</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Trends for Marrakech-Safi region before earthquake period of </span><span class="si">{</span><span class="n">terms</span><span class="si">}</span><span class="s2"> terms&quot;</span><span class="p">)</span>
+    <span class="n">get_needs_trends</span><span class="p">(</span><span class="n">bef</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Trends for Marrakech-Safi region after earthquake period of </span><span class="si">{</span><span class="n">terms</span><span class="si">}</span><span class="s2"> terms&quot;</span><span class="p">)</span>
+    <span class="n">get_needs_trends</span><span class="p">(</span><span class="n">aft</span><span class="p">)</span>
+    <span class="n">plot_needs_trends</span><span class="p">(</span><span class="n">bef</span><span class="p">,</span> <span class="n">aft</span><span class="p">,</span> <span class="n">terms</span><span class="p">,</span> <span class="s1">&#39;Marrakech-Safi&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;============*****=================&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Trends for Marrakech-Safi region before earthquake period of water terms
+Downward trend: -0.02881821157865583
+Trends for Marrakech-Safi region after earthquake period of water terms
+Upward trend: 0.16760845383759684
+</pre></div>
+</div>
+<img alt="../../_images/45a623c1c1690e4663be5169519702c48681767bbce2d362b2ce96dd6d1d3677.png" src="../../_images/45a623c1c1690e4663be5169519702c48681767bbce2d362b2ce96dd6d1d3677.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>============*****=================
+Trends for Marrakech-Safi region before earthquake period of food terms
+Downward trend: -0.0469391352521973
+Trends for Marrakech-Safi region after earthquake period of food terms
+Downward trend: -0.16293659621802056
+</pre></div>
+</div>
+<img alt="../../_images/a1d4f2baa822feb61905c95cdaed5277331710ad54974305ce94e7f902f14234.png" src="../../_images/a1d4f2baa822feb61905c95cdaed5277331710ad54974305ce94e7f902f14234.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>============*****=================
+Trends for Marrakech-Safi region before earthquake period of personal hygiene terms
+Upward trend: 0.05608857327524678
+Trends for Marrakech-Safi region after earthquake period of personal hygiene terms
+Downward trend: -0.03626251390433904
+</pre></div>
+</div>
+<img alt="../../_images/573a8cff0be33120df79d794498372f7484902f4184ff4af9e6e9bff0be391f8.png" src="../../_images/573a8cff0be33120df79d794498372f7484902f4184ff4af9e6e9bff0be391f8.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>============*****=================
+Trends for Marrakech-Safi region before earthquake period of hospital terms
+Downward trend: -0.06598227751056951
+Trends for Marrakech-Safi region after earthquake period of hospital terms
+Downward trend: -0.3387467556544313
+</pre></div>
+</div>
+<img alt="../../_images/b0c5fcff48852ac88b71f4e8a4c99e5b4fe7298734c91ec368278220bef544d3.png" src="../../_images/b0c5fcff48852ac88b71f4e8a4c99e5b4fe7298734c91ec368278220bef544d3.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>============*****=================
+</pre></div>
+</div>
+</div>
+</div>
+<p>Souss-Massa Region</p>
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">terms</span> <span class="ow">in</span> <span class="n">needs_terms</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+    <span class="n">bef</span> <span class="o">=</span> <span class="n">get_df_ht</span><span class="p">(</span><span class="n">needs_terms</span><span class="p">[</span><span class="n">terms</span><span class="p">],</span> <span class="s2">&quot;MA-09&quot;</span><span class="p">,</span> <span class="n">start_date</span><span class="o">=</span><span class="s1">&#39;2023-07&#39;</span><span class="p">,</span> <span class="n">end_date</span> <span class="o">=</span> <span class="s2">&quot;2023-08&quot;</span><span class="p">)</span>
+    <span class="n">aft</span> <span class="o">=</span> <span class="n">get_df_ht</span><span class="p">(</span><span class="n">needs_terms</span><span class="p">[</span><span class="n">terms</span><span class="p">],</span> <span class="s2">&quot;MA-09&quot;</span><span class="p">,</span> <span class="n">start_date</span><span class="o">=</span><span class="s1">&#39;2023-09&#39;</span><span class="p">,</span> <span class="n">end_date</span> <span class="o">=</span> <span class="s1">&#39;2023-09&#39;</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Trends for Souss-Massa region before earthquake period of </span><span class="si">{</span><span class="n">terms</span><span class="si">}</span><span class="s2"> terms&quot;</span><span class="p">)</span>
+    <span class="n">get_needs_trends</span><span class="p">(</span><span class="n">bef</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Trends for Souss-Massa region after earthquake period of </span><span class="si">{</span><span class="n">terms</span><span class="si">}</span><span class="s2"> terms&quot;</span><span class="p">)</span>
+    <span class="n">get_needs_trends</span><span class="p">(</span><span class="n">aft</span><span class="p">)</span>
+    <span class="n">plot_needs_trends</span><span class="p">(</span><span class="n">bef</span><span class="p">,</span> <span class="n">aft</span><span class="p">,</span> <span class="n">terms</span><span class="p">,</span> <span class="s1">&#39;Souss-Massa&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;============*****=================&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Trends for Souss-Massa region before earthquake period of water terms
+Upward trend: 0.0035506534713302985
+Trends for Souss-Massa region after earthquake period of water terms
+Upward trend: 0.08671857619577276
+</pre></div>
+</div>
+<img alt="../../_images/61824b850badcb15569313659b222e776d1a4b023de1b97aaa80ca6f21565b5e.png" src="../../_images/61824b850badcb15569313659b222e776d1a4b023de1b97aaa80ca6f21565b5e.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>============*****=================
+Trends for Souss-Massa region before earthquake period of food terms
+Downward trend: -0.10109037798091212
+Trends for Souss-Massa region after earthquake period of food terms
+Downward trend: -0.23617352614015613
+</pre></div>
+</div>
+<img alt="../../_images/7d8c4fdfcc80238e968cd120068f458287d3edd9cbf19671c2234b2231db2d04.png" src="../../_images/7d8c4fdfcc80238e968cd120068f458287d3edd9cbf19671c2234b2231db2d04.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>============*****=================
+Trends for Souss-Massa region before earthquake period of personal hygiene terms
+Upward trend: 0.05592908765833136
+Trends for Souss-Massa region after earthquake period of personal hygiene terms
+Upward trend: 0.104634779384501
+</pre></div>
+</div>
+<img alt="../../_images/31f88a0c059d2fb1ef2bdd9b86de57b2a94958f3c6d767cb109f1bd8d1342e63.png" src="../../_images/31f88a0c059d2fb1ef2bdd9b86de57b2a94958f3c6d767cb109f1bd8d1342e63.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>============*****=================
+Trends for Souss-Massa region before earthquake period of hospital terms
+Upward trend: 0.00504757987571303
+Trends for Souss-Massa region after earthquake period of hospital terms
+Upward trend: 0.289976517117785
+</pre></div>
+</div>
+<img alt="../../_images/4e0a299097c2eec1f456889645bb82bd70c7c3f77a63ca3d4e42134a828d8d38.png" src="../../_images/4e0a299097c2eec1f456889645bb82bd70c7c3f77a63ca3d4e42134a828d8d38.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>============*****=================
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -786,14 +1071,17 @@ Downward trend: -0.007824603167199492
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Analyzing Google Trends</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lists-of-commonly-used-travel-search-terms-in-different-languages-catering-to-united-states-united-kingdom-france-germany-and-spain">Lists of commonly used travel search terms in different languages catering to United States, United Kingdom, France, Germany and Spain.</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comparing-the-trends-for-the-past-3-years-for-the-same-time-period-jan-sept">Comparing the trends for the past 3 years for the same time period (Jan - Sept)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analyzing-google-trends">Analyzing Google Trends</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lists-of-commonly-used-travel-search-terms-in-different-languages-catering-to-united-states-united-kingdom-france-germany-and-spain">Lists of commonly used travel search terms in different languages catering to United States, United Kingdom, France, Germany and Spain.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comparing-the-trends-for-the-past-3-years-for-the-same-time-period-jan-sept">Comparing the trends for the past 3 years for the same time period (Jan - Sept)</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#prediction">Prediction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prediction">Prediction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#needs-assessment">Needs Assessment</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#analyzing-data-at-subnational-regions-for-impacted-areas">Analyzing data at subnational regions for impacted areas</a></li>
 </ul>
-
+</li>
+</ul>
   </nav></div>
 
 </div></div>
@@ -818,7 +1106,7 @@ By World Bank
   
   <div class="footer-item">
     <p class="last-updated">
-  Last updated on Nov 13, 2023.
+  Last updated on Nov 20, 2023.
   <br/>
 </p>
   </div>
