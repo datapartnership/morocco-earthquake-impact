@@ -19,7 +19,7 @@ html:
   baseurl: https://datapartnership.org/morocco-earthquake-impact/README.html
   extra_footer: |
     <div>
-        <b>All content (unless otherwise specified) is subject to the <a href="https://raw.githubusercontent.com/worldbank/template/main/LICENSE">World Bank Master Community License Agreement.</a></b>
+        <b>All content (unless otherwise specified) is subject to the <a href="https://www.mozilla.org/en-US/MPL">Mozilla Public License.</a></b>
     </div>
 
 #######################################################################################
@@ -30,7 +30,7 @@ execute:
 #######################################################################################
 # Bibliography settings
 bibtex_bibfiles:
-    - docs/bibliography.bib
+  - docs/bibliography.bib
 
 #######################################################################################
 # Sphinx settings
